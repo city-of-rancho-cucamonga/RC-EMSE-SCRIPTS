@@ -1,7 +1,6 @@
 
 if (feeExists('PLMRESPLN','NEW') || feeExists('PLMRESINSP','NEW')) {
-	
-//replaced branch(BLDEMSEFee:PlumbingFee)
+	//replaced branch(BLDEMSEFee:PlumbingFee)
 bldPlumbingFee();
 	}
 

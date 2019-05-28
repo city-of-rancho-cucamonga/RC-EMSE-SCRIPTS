@@ -1,13 +1,4 @@
 
-showDebug = false;
-showMessage= false;
-
-//replaced branch(EMSE:GlobalFlags)
-globalFlags();
-branch('FAA:' + appTypeArray[0] + '/*/*/*');
-branch('FAA:' + appTypeArray[0] + '/' + appTypeArray[1] + '/*/*');
-branch('FAA:' + appTypeArray[0] + '/' + appTypeArray[1] + '/' + appTypeArray[2] + '/*');
-branch('FAA:' + appTypeString);
 // DISABLED: FeeAssessAfter:06
 // var feeRecTotal = 0;
 // feeRecTotal = feeAmountExcept(capId,'FDROP1010','FDROP1020');

@@ -1,15 +1,13 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	//replaced branch(BLD:EMSEUpdateGISObjects)
+	bldUpdateGisObjects();
+}
 
 if (typeof(AREAINFORMATION) == 'object') {
-	
-//replaced branch(BLDEMSEFee:BuildingPlanInsp)
-bldPlanInsp();
-	}
+	//replaced branch(BLDEMSEFee:BuildingPlanInsp)
+	bldPlanInsp();
+}
 
 // DISABLED: ASIUA:Building/Commercial/New Construction/NA:20
 // if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
@@ -27,8 +25,6 @@ bldPlanInsp();
 // 	}
 
 if (typeof(AREAINFORMATION) == 'object' && calcValue >= 100000) {
-	
-//replaced branch(ENG:CDD:EMSE:UPDATEASI)
-engCddUpdateASI();
-	}
-
+	//replaced branch(ENG:CDD:EMSE:UPDATEASI)
+	engCddUpdateASI();
+}

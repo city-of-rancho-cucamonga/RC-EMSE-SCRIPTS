@@ -1,15 +1,13 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	//replaced branch(BLD:EMSEUpdateGISObjects)
+	bldUpdateGisObjects();
+}
 
 if (typeof(AREAINFORMATION) == 'object') {
-	
-//replaced branch(BLDEMSEFee:BuildingResNew)
-bldResNew();
-	}
+	//replaced branch(BLDEMSEFee:BuildingResNew)
+	bldResNew();
+}
 
 // DISABLED: ASIUA:Building/Residential/New Construction/NA:30
 // if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
@@ -25,4 +23,3 @@ bldResNew();
 // if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
 // 	br_nch('BLDEMSEFee:PlumbingFee');
 // 	}
-

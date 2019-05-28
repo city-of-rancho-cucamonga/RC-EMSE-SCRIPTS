@@ -17,13 +17,10 @@
 // 	br_nch('BLD:EMSEUpdateGISObjects');
 // 	}
 
-aa.finance.switchCalcFactor(capId,'CALC','ADMIN');
-if(currentUserID == 'ROLAND') showDebug=true;
+aa.finance.switchCalcFactor(capId, 'CALC', 'ADMIN');
 lpArray = getLicenseProfessional(capId);
 if (lpArray) {
 	licProfObject = lpArray[0];
-	
-//replaced branch(LPUA:Building/*/*/*)
-licProfUpdateBld();
-	}
-
+	//replaced branch(LPUA:Building/*/*/*)
+	licProfUpdateBld();
+}

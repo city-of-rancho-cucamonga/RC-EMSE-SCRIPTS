@@ -1,13 +1,10 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	//replaced branch(BLD:EMSEUpdateGISObjects)
+	bldUpdateGisObjects();
+}
 
 if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
-	
-//replaced branch(BLDEMSEFee:PlumbingFee)
-bldPlumbingFee();
-	}
-
+	//replaced branch(BLDEMSEFee:PlumbingFee)
+	bldPlumbingFee();
+}

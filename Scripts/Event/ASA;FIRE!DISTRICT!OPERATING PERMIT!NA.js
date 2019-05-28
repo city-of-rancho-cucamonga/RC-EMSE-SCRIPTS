@@ -1,3 +1,2 @@
 
-scheduleInspection('Initial Inspection',1);
-
+scheduleInspection('Initial Inspection', 1);

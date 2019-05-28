@@ -2,8 +2,7 @@
 // DISABLED: WTUA:Fire/Site Info/NA/NA:00
 // inspUpdateAllCarryOverFlags();
 if (validateGisObjects()) {
-	
-//replaced branch(FD:EMSE:UpdateGISObjects)
+	//replaced branch(FD:EMSE:UpdateGISObjects)
 fdUpdateGisObjects();
 	}
 
@@ -57,7 +56,6 @@ if (wfTask == 'Follow-Up Inspection' && wfStatus == 'Non-Compliant') {
 	else           scheduleInspection('Initial Inspection',0,currentUserID,null,null);
 	capId = holdId;
 	}
-
 
 //replaced branch(EMSE:Fire:WorkflowTaskAssignment)
 fireWorkflowTaskAssignment();
@@ -128,7 +126,6 @@ if (wfTask == 'Status' && matches(wfStatus,'Schedule Annual')) {
 //	} else {
 // 	editAppSpecific('GIS INFO.Weed Abatement Area','NO');
 // 	}
-
 
 //replaced branch(EMSE:Fire:WorkflowTaskAssignment)
 fireWorkflowTaskAssignment();

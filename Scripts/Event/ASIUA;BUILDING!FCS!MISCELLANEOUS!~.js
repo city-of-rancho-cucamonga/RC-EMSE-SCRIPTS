@@ -1,7 +1,5 @@
 
 if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
-	
-//replaced branch(FCSEMSEFee:MiscFee)
-fcsFeeMisc();
-	}
-
+	//replaced branch(FCSEMSEFee:MiscFee)
+	fcsFeeMisc();
+}

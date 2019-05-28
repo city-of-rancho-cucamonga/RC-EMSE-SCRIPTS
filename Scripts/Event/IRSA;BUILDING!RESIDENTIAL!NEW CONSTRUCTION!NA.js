@@ -1,7 +1,6 @@
 
 if (inspType == 'Final Inspection' && inspResult == 'Approved') {
-	
-//replaced branch(ENG:EMSEUpdateEnvCDDRecordAndEmail)
+	//replaced branch(ENG:EMSEUpdateEnvCDDRecordAndEmail)
 engUpdateEnvCddRecordAndEmail();
 	}
 

@@ -6,8 +6,7 @@ if (wfTask == 'Planning Commission' && wfStatus == 'Remand Committee') {
 	}
 
 if (matches(wfTask,'Appeal','Review Consolidation') && wfStatus == 'Appealed') {
-	
-//replaced branch(PLN:EMSECreatePlnAppealRecord)
+	//replaced branch(PLN:EMSECreatePlnAppealRecord)
 PLN:EMSECreatePlnAppealRecord();
 	}
 

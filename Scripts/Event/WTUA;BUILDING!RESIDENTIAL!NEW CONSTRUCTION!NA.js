@@ -12,8 +12,7 @@ if (wfTask == 'Application Submittal' && AInfo['CVWD Review'] != 'CHECKED') {
 	}
 
 if (wfTask == 'Permit Issuance' && wfStatus == 'Issued') {
-	
-//replaced branch(ENGDEVEMSEFee:Invoice)
+	//replaced branch(ENGDEVEMSEFee:Invoice)
 engDevFeeInvoice();
 	}
 

@@ -4,8 +4,7 @@ if (inspType == 'Final Inspection' && inspResult == 'Approved' && AInfo['FIRE SI
 	}
 
 if (inspType == 'Fire Final' && matches(inspResult,'Approved') && AInfo['FIRE SITE INFO RECORD.Fire Site Info Record'] != null) {
-	
-//replaced branch(EMSE:BLDFCS:FDOPERATINGPRMT)
+	//replaced branch(EMSE:BLDFCS:FDOPERATINGPRMT)
 bldFcsOperatingPermit();
 	}
 
@@ -22,8 +21,7 @@ if (inspType == 'Gas Utility Clearance' && inspResult == 'Approved') {
 	}
 
 if (inspType == 'Final Inspection' && inspResult == 'Approved') {
-	
-//replaced branch(ENG:EMSEUpdateEnvCDDRecordAndEmail)
+	//replaced branch(ENG:EMSEUpdateEnvCDDRecordAndEmail)
 engUpdateEnvCddRecordAndEmail();
 	}
 

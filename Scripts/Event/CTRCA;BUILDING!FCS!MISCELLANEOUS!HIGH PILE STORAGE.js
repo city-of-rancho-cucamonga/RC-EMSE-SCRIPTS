@@ -1,7 +1,6 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(FD-BLD:EMSE:UpdateGISObjects)
+	//replaced branch(FD-BLD:EMSE:UpdateGISObjects)
 fdBldUpdateGisObjects();
 	}
 

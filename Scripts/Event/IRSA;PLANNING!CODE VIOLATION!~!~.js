@@ -16,15 +16,13 @@ if (inspType=='Initial Inspection' && inspResult=='Refer to Fire District') {
 
 if (inspType=='Initial Inspection' && inspResult=='Founded') {
 	gsoArry = getGuideSheetObjects(inspId);
-	for(x in gsoArry) 
-//replaced branch(ENF_GenerateEnfViolationsASIT)
+	for(x in gsoArry) //replaced branch(ENF_GenerateEnfViolationsASIT)
 enfGenerateViolations();
 	}
 
 if (inspType=='Follow-up Inspection' && inspResult=='In Violation') {
 	gsoArry = getGuideSheetObjects(inspId);
-	for(x in gsoArry) 
-//replaced branch(ENF_GenerateEnfViolationsASIT)
+	for(x in gsoArry) //replaced branch(ENF_GenerateEnfViolationsASIT)
 enfGenerateViolations();
 	}
 

@@ -1,7 +1,6 @@
 
 if (wfTask == 'Appeal' && wfStatus == 'Appealed') {
-	
-//replaced branch(PLN:EMSECreatePlnAppealRecord)
+	//replaced branch(PLN:EMSECreatePlnAppealRecord)
 PLN:EMSECreatePlnAppealRecord();
 	}
 

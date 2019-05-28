@@ -11,8 +11,7 @@ if (wfTask == 'Review Consolidation' && wfStatus == 'Incomplete') {
 	}
 
 if (matches(wfTask,'Application Submittal') && matches(wfStatus, 'Accepted', 'Resubmitted')) {
-	
-//replaced branch(PLN:EMSE10DayExpedite)
+	//replaced branch(PLN:EMSE10DayExpedite)
 plnTenDayExpedite();
 	}
 

@@ -1,7 +1,5 @@
 
 if (typeof(MECHANICALINFORMATIONTABLE) == 'object' && !publicUser) {
-	
-//replaced branch(BLDEMSEFee:MechanicalFeeNoSplit)
-bldMechFeeNoSplit();
-	}
-
+	//replaced branch(BLDEMSEFee:MechanicalFeeNoSplit)
+	bldMechFeeNoSplit();
+}

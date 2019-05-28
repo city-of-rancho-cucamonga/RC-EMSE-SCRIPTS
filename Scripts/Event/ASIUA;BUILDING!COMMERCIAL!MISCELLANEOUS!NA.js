@@ -1,33 +1,28 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	//replaced branch(BLD:EMSEUpdateGISObjects)
+	bldUpdateGisObjects();
+}
 
 if (typeof(TYPESOFWORK) == 'object') {
-	
-//replaced branch(BLDEMSEFee:MiscFee)
-bldMiscFee();
-	}
+	//replaced branch(BLDEMSEFee:MiscFee)
+	bldMiscFee();
+}
 
 if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
-	
-//replaced branch(BLDEMSEFee:ElectricalFeeNoSplit)
-bldElecFeeNoSplit();
-	}
+	//replaced branch(BLDEMSEFee:ElectricalFeeNoSplit)
+	bldElecFeeNoSplit();
+}
 
 if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
-	
-//replaced branch(BLDEMSEFee:MechanicalFeeNoSplit)
-bldMechFeeNoSplit();
-	}
+	//replaced branch(BLDEMSEFee:MechanicalFeeNoSplit)
+	bldMechFeeNoSplit();
+}
 
 if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
-	
-//replaced branch(BLDEMSEFee:PlumbingFeeNoSplit)
-bldPlumbingFeeNoSplit();
-	}
+	//replaced branch(BLDEMSEFee:PlumbingFeeNoSplit)
+	bldPlumbingFeeNoSplit();
+}
 
 // DISABLED: ASIUA:Building/Commercial/Miscellaneous/NA:z30
 // if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
@@ -38,4 +33,3 @@ bldPlumbingFeeNoSplit();
 // if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
 // 	br_nch('BLDEMSEFee:PlumbingFee');
 // 	}
-

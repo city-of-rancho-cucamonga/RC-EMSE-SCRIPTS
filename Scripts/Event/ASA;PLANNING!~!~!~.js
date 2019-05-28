@@ -4,8 +4,6 @@
 // DISABLED: ASA:Planning/*/*/*:02
 // createRefContactsFromCapContactsAndLink(capId,null,iArr,false,true,comparePeopleStandard);
 if (validateGisObjects()) {
-	
-//replaced branch(PLN:EMSE:UpdateGISObjects)
-plnUpdateGisObjects();
-	}
-
+	//replaced branch(PLN:EMSE:UpdateGISObjects)
+	plnUpdateGisObjects();
+}

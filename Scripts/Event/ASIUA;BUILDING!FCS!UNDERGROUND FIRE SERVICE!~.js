@@ -1,7 +1,5 @@
 
 if (typeof(FIREUNDERGROUNDDETAIL) == 'object') {
-	
-//replaced branch(FCSEMSEFee:UndergroundFee)
-fcsFeeUnderground();
-	}
-
+	//replaced branch(FCSEMSEFee:UndergroundFee)
+	fcsFeeUnderground();
+}

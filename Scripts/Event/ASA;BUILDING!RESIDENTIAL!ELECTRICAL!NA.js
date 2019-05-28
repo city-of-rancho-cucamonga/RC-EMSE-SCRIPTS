@@ -1,7 +1,5 @@
 
 if (typeof(ELECTRICALINFORMATIONTABLE) == 'object' && !publicUser) {
-	
-//replaced branch(BLDEMSEFee:ElectricalFeeNoSplit)
-bldElecFeeNoSplit();
-	}
-
+	//replaced branch(BLDEMSEFee:ElectricalFeeNoSplit)
+	bldElecFeeNoSplit();
+}

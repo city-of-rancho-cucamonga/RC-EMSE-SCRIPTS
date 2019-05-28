@@ -1,13 +1,10 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	//replaced branch(BLD:EMSEUpdateGISObjects)
+	bldUpdateGisObjects();
+}
 
 if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
-	
-//replaced branch(BLDEMSEFee:ElectricalFee)
-bldElecFee();
-	}
-
+	//replaced branch(BLDEMSEFee:ElectricalFee)
+	bldElecFee();
+}

@@ -24,8 +24,7 @@ if (inspType == 'Follow-up Inspection' && matches(inspResult,'Refere to Admin Ci
 	}
 
 if (matches(inspType,'Initial Inspection','Follow-up Inspection')) {
-	
-//replaced branch(IRSA:EMSE:FireDistrict:InvoiceFees)
+	//replaced branch(IRSA:EMSE:FireDistrict:InvoiceFees)
 fireDistrictInvoiceFees();
 	}
 

@@ -1,7 +1,5 @@
 
 if (typeof(FIRESPRINKLERFLOORDETAIL) == 'object') {
-	
-//replaced branch(FCSEMSEFee:SprinklerFee)
-fcsFeeSprinkler();
-	}
-
+	//replaced branch(FCSEMSEFee:SprinklerFee)
+	fcsFeeSprinkler();
+}

@@ -1,8 +1,6 @@
 
 copyParcelGisObjects();
 if (validateGisObjects()) {
-	
-//replaced branch(PLN:EMSE:UpdateGISObjects)
-plnUpdateGisObjects();
-	}
-
+	//replaced branch(PLN:EMSE:UpdateGISObjects)
+	plnUpdateGisObjects();
+}

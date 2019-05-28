@@ -5,8 +5,7 @@ if (inspResult == 'As-Built Required') {
 	}
 
 if (inspType == 'Fire Final' && matches(inspResult,'Approved') && AInfo['FIRE SITE INFO RECORD.Fire Site Info Record'] != null) {
-	
-//replaced branch(EMSE:BLDFCS:FDOPERATINGPRMT)
+	//replaced branch(EMSE:BLDFCS:FDOPERATINGPRMT)
 bldFcsOperatingPermit();
 	}
 

@@ -14,8 +14,7 @@ if (parentCapId && wfTask.equals('Amendment Approval') && wfStatus.equals('Appro
 	}
 
 if (parentCapId && wfTask.equals('Amendment Approval') && wfStatus.equals('Approved')) {
-	
-//replaced branch(EMSE:LicProfLookup)
+	//replaced branch(EMSE:LicProfLookup)
 licProfLookup();
 	}
 

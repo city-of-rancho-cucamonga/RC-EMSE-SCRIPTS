@@ -1,7 +1,6 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(BLD:EMSEUpdateGISObjects)
+	//replaced branch(BLD:EMSEUpdateGISObjects)
 bldUpdateGisObjects();
 	}
 
@@ -10,8 +9,7 @@ if (wfTask == 'Certificate of Occupancy' && wfStatus == 'Final CO Issued') {
 	}
 
 if (wfTask == 'Application Submittal' && wfStatus == 'Submitted' && calcValue >= 100000) {
-	
-//replaced branch(ENG:EMSECreateEnvCDDRecord)
+	//replaced branch(ENG:EMSECreateEnvCDDRecord)
 engCreateEnvCddRecord();
 	}
 
@@ -32,8 +30,7 @@ if (wfTask == 'Permit Issuance' && wfStatus == 'Ready to Issue' && feeExists('CD
 	}
 
 if (wfTask=='Engineering Review' && matches(wfStatus,'Approved', 'Approved W/Corrections')) {
-	
-//replaced branch(ENG:CDD:EMSE:UPDATEASI)
+	//replaced branch(ENG:CDD:EMSE:UPDATEASI)
 engCddUpdateASI();
 	}
 

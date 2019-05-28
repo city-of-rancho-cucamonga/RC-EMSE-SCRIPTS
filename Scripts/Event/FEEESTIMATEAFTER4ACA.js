@@ -1,7 +1,6 @@
 
 showDebug = 1;
 showMessage= false;
-
 //replaced branch(EMSE:GlobalFlags)
 globalFlags();
 branch('FEA:' + appTypeArray[0] + '/*/*/*');
@@ -13,7 +12,6 @@ branch('FEA:' + appTypeString);
  {
 showDebug = false;
 showMessage= false;
-
 //replaced branch(EMSE:GlobalFlags)
 globalFlags();
 branch('ASA:' + appTypeArray[0] + '/*/*/*');

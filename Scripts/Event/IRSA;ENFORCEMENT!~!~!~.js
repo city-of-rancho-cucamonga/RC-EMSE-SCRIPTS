@@ -40,7 +40,6 @@ if (inspType == 'Follow-up Inspection' && matches(inspResult,'In Violation', 'NV
 // 	editTaskSpecific('Notification','Last Inspection ID', inspId);
 // 	}
 
-
 //replaced branch(EMSE:Enforcement:WorkflowTaskAssignment)
 enfWorkflowTaskAssignment();
 

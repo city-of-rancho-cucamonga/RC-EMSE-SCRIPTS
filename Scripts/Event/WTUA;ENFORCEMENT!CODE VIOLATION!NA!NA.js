@@ -100,7 +100,6 @@ if (wfTask=='Criminal Filing' && wfStatus == 'Resolved' && AInfo['Probation Expi
 	scheduleInspectDate('Follow-up Inspection', dateAdd(AInfo['Probation Expiration'],-60),enfAsgnStaff,'AM','Monitor Inspection');
 	}
 
-
 //replaced branch(EMSE:Enforcement:WorkflowTaskAssignment)
 enfWorkflowTaskAssignment();
 if (wfTask=='Case Initiated' && matches(wfStatus,'Assigned','Duplicate Case')) {

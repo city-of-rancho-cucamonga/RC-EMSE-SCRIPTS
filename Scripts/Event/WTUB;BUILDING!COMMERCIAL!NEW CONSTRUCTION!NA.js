@@ -12,8 +12,7 @@ if (parentBal > 0) {
 	}
 
 if (wfTask=='Engineering Review' && matches(wfStatus,'Approved', 'Approved w/ Comments')) {
-	
-//replaced branch(ENG:CDD:EMSE:CANCELTASK)
+	//replaced branch(ENG:CDD:EMSE:CANCELTASK)
 engCddCancelTask();
 	}
 

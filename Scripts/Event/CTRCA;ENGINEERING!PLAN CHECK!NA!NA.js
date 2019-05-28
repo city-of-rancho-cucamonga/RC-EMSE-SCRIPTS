@@ -1,7 +1,6 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(ENGCIP:EMSE:UpdateGISObjects)
+	//replaced branch(ENGCIP:EMSE:UpdateGISObjects)
 engUpdateGisObjects();
 	}
 

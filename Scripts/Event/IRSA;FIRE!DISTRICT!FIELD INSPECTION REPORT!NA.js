@@ -45,8 +45,7 @@ if (inspType=='Initial Inspection' && matches(inspResult,'No Violations - OP Req
 	}
 
 if (matches(inspType,'Initial Inspection','Follow-up Inspection')) {
-	
-//replaced branch(IRSA:EMSE:FireDistrict:InvoiceFees)
+	//replaced branch(IRSA:EMSE:FireDistrict:InvoiceFees)
 fireDistrictInvoiceFees();
 	}
 

@@ -1,7 +1,6 @@
 
 if (validateGisObjects()) {
-	
-//replaced branch(ENF:EMSEUpdateGISObjects)
+	//replaced branch(ENF:EMSEUpdateGISObjects)
 enfUpdateGisObjects();
 	}
 

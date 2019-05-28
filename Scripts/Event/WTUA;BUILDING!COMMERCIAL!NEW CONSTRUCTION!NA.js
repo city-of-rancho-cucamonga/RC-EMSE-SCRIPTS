@@ -4,8 +4,7 @@ if (wfTask == 'Certificate of Occupancy' && wfStatus == 'Final CO Issued') {
 	}
 
 if (wfTask == 'Application Submittal' && wfStatus == 'Submitted' && calcValue >= 100000) {
-	
-//replaced branch(ENG:EMSECreateEnvCDDRecord)
+	//replaced branch(ENG:EMSECreateEnvCDDRecord)
 engCreateEnvCddRecord();
 	}
 
@@ -26,14 +25,12 @@ if (wfTask == 'Review Consolidation' && wfStatus == 'Ready to Issue' && feeExist
 	}
 
 if (wfTask == 'Permit Issuance' && wfStatus == 'Issued') {
-	
-//replaced branch(ENGDEVEMSEFee:Invoice)
+	//replaced branch(ENGDEVEMSEFee:Invoice)
 engDevFeeInvoice();
 	}
 
 if (wfTask=='Engineering Review' && matches(wfStatus,'Approved', 'Approved w/ Comments')) {
-	
-//replaced branch(ENG:CDD:EMSE:UPDATEASI)
+	//replaced branch(ENG:CDD:EMSE:UPDATEASI)
 engCddUpdateASI();
 	}
 
