@@ -4,4 +4,3 @@
 // 	editAppSpecific('KEY DATES.Permit Issued,wfDateMMDDYYYY);
 // 	editAppSpecific('KEY DATES.Permit Expires', dateAdd(wfDateMMDDYYYY,90));
 // 	}
-

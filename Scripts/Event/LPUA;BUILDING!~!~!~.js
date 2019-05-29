@@ -1,3 +1,2 @@
-
-
-call the new function LPUA:Building/*/*/*
+//replaced branch(LPUA:Building/*/*/*)
+licProfUpdateBld();

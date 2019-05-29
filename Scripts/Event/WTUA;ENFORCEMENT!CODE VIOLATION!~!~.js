@@ -109,4 +109,3 @@
 // DISABLED: WTUA:Enforcement/Code Violation/*/*:99-Civica
 // civicaURL = 'https://accela.cityofrc.us/CRMInterface/CallCRMService.asmx';
 // sendClosureNotification(civicaURL);
-

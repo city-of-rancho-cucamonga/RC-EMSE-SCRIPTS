@@ -14,11 +14,8 @@
 // 	email(emailRCStaffNewEDR(),'edr-noreply@cityofrc.us',DocCat +' were uploaded to ' + capIDString, 'New plans/drawings were uploaded to ' + capIDString + '.<br><br> Please review the '+DocCat+' to make sure they meet the submission requirements and assign the Document Review Task(s) to the appropriate Department(s). Thank you.<br><br> City of Rancho Cucamonga Accelerate');
 // 	}
 
-if (publicUser==true && !(capIDString.indexOf('TMP') > 0)) {
-	for (var i = 0;
-	i < documentModelArray.size();
-	i++) var DocCat = documentModelArray.get(i).getDocCategory().toString();
-	email(emailRCStaffNewEDR(),'edr-noreply@cityofrc.us',DocCat +' were uploaded to ' + capIDString, 'New plans/drawings were uploaded to ' + capIDString + '.<br><br> Please review the '+DocCat+' to make sure they meet the submission requirements and assign the Document Review Task(s) to the appropriate Department(s). Thank you.<br><br> The following planner: '+capDetail.getAsgnStaff()+' is currently assigned to the record;
-	<br><br> City of Rancho Cucamonga Accelerate');
-	}
-
+if (publicUser == true && !(capIDString.indexOf('TMP') > 0)) {
+	for (var i = 0; i < documentModelArray.size(); i++)
+		var DocCat = documentModelArray.get(i).getDocCategory().toString();
+	email(emailRCStaffNewEDR(), "edr-noreply@cityofrc.us", DocCat + " were uploaded to " + capIDString, "New plans/drawings were uploaded to " + capIDString + ".<br><br> Please review the '+DocCat+' to make sure they meet the submission requirements and assign the Document Review Task(s) to the appropriate Department(s). Thank you.<br><br> The following planner: " + capDetail.getAsgnStaff() + " is currently assigned to the record; <br><br> City of Rancho Cucamonga Accelerate");
+}

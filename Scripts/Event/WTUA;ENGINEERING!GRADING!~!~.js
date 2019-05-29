@@ -1,8 +1,8 @@
 
 if (validateGisObjects()) {
 	//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	bldUpdateGisObjects();
+}
 
 // DISABLED: WTUA:Engineering/Grading/*/*:20
 // if (wfTask == 'Grading Review' && wfStatus == 'Approved') {
@@ -17,5 +17,4 @@ bldUpdateGisObjects();
 if (wfTask == 'Grading Review' && wfStatus == 'Approved') {
 	priAddrRec = PriAddressOnCap();
 	email('AA.EnvironmentalPrograms@cityofrc.us', 'AA-NoReply@cityofrc.us', 'Grading Review has been Approved on: ' + capIDString, 'The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
-	}
-
+}

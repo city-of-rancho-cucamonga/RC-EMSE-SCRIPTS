@@ -22,4 +22,3 @@
 // if (feeRecTotal > 0 && AInfo['GENERAL INFORMATION.Non-Profit Organization'] == 'Yes' && feeReduct == 'CHECKED') {
 // 	updateFee('FDROP1020','FD_OPERATING','FINAL',feeRecTotal * -1,'N');
 // 	}
-

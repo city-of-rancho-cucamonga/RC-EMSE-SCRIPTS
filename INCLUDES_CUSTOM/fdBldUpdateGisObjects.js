@@ -1,19 +1,19 @@
 function fdBldUpdateGisObjects() {
 
-var rcFireInspArea = getGISInfo('CITYOFRC','Fire Inspection Areas','Id');
-var rcVHFHSZ = getGISInfoArray2('CITYOFRC','VHFSZ','HAZ_CLASS',-5,'Feet');
-var rcFirstDueBoundary = getGISInfoArray2('CITYOFRC','First Due Boundary','FIRSTDUE_',-5,'Feet');
-var rcIsVacant = getGISInfo2('CITYOFRC','Parcels','VACANT', -5, 'Feet');
-if (!rcFireInspArea) {
-	editAppSpecific('GIS INFORMATION.Inspection Area','NA');
+	var rcFireInspArea = getGISInfo('CITYOFRC', 'Fire Inspection Areas', 'Id');
+	var rcVHFHSZ = getGISInfoArray2('CITYOFRC', 'VHFSZ', 'HAZ_CLASS', -5, 'Feet');
+	var rcFirstDueBoundary = getGISInfoArray2('CITYOFRC', 'First Due Boundary', 'FIRSTDUE_', -5, 'Feet');
+	var rcIsVacant = getGISInfo2('CITYOFRC', 'Parcels', 'VACANT', -5, 'Feet');
+	if (!rcFireInspArea) {
+		editAppSpecific('GIS INFORMATION.Inspection Area', 'NA');
 	} else {
-	editAppSpecific('GIS INFORMATION.Inspection Area',rcFireInspArea);
+		editAppSpecific('GIS INFORMATION.Inspection Area', rcFireInspArea);
 	}
 
-if (!rcVHFHSZ || rcVHFHSZ.length == 0) {
-	editAppSpecific('GIS INFORMATION.VHFHSZ','No');
+	if (!rcVHFHSZ || rcVHFHSZ.length == 0) {
+		editAppSpecific('GIS INFORMATION.VHFHSZ', 'No');
 	} else {
-	editAppSpecific('GIS INFORMATION.VHFHSZ',rcVHFHSZ.toString());
+		editAppSpecific('GIS INFORMATION.VHFHSZ', rcVHFHSZ.toString());
 	}
 
 }

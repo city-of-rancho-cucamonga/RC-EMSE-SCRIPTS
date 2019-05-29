@@ -1,6 +1,5 @@
 
-if (feeExists('PLMRESPLN','NEW') || feeExists('PLMRESINSP','NEW')) {
+if (feeExists('PLMRESPLN', 'NEW') || feeExists('PLMRESINSP', 'NEW')) {
 	//replaced branch(BLDEMSEFee:PlumbingFeeNoSplit)
-bldPlumbingFeeNoSplit();
-	}
-
+	bldPlumbingFeeNoSplit();
+}

@@ -6,6 +6,5 @@
 // 	}
 
 if (wfTask == 'City Council' && wfStatus == 'Improvements Accepted') {
-	scheduleInspection('Maintenance Bond Release',300);
-	}
-
+	scheduleInspection('Maintenance Bond Release', 300);
+}

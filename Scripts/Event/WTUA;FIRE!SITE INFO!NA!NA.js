@@ -3,36 +3,36 @@
 // inspUpdateAllCarryOverFlags();
 if (validateGisObjects()) {
 	//replaced branch(FD:EMSE:UpdateGISObjects)
-fdUpdateGisObjects();
-	}
+	fdUpdateGisObjects();
+}
 
 if (wfTask == 'Correction Notice' && (AInfo['Last Inspection ID'] != '' || AInfo['Last Inspection ID'] != null)) {
 	updateInspCarryOverFlag(AInfo['Last Inspection ID']);
-	}
+}
 
 var fireInspDist;
 fireInspDist = 0;
-if (wfTask == 'Correction Notice' && matches(wfStatus,'Correction Notice Sent','Compliance Order Issued','Red Tagged')) {
-	scheduleInspectDateGroup('FD_INSP','Follow-Up Inspection',AInfo['Compliance Due Date'],currentUserID);
-	editTaskSpecific('Correction Notice','Compliance Due Date','');
+if (wfTask == 'Correction Notice' && matches(wfStatus, 'Correction Notice Sent', 'Compliance Order Issued', 'Red Tagged')) {
+	scheduleInspectDateGroup('FD_INSP', 'Follow-Up Inspection', AInfo['Compliance Due Date'], currentUserID);
+	editTaskSpecific('Correction Notice', 'Compliance Due Date', '');
 	//scheduleInspectDate('Follow-Up Inspection',AInfo['Compliance Due Date'],currentUserID);
-	}
+}
 
 if (wfTask == 'Court Process' && wfStatus == 'Criminal Complaint') {
-	setTask('Arraignment','Y','N','FD_FLDINSP_COURT');
-	}
+	setTask('Arraignment', 'Y', 'N', 'FD_FLDINSP_COURT');
+}
 
 if (wfTask == 'Follow-Up Inspection' && wfStatus == 'Refer to Admin Citation') {
-	setTask('Citation Appeal','Y','N','FD_FLDINSP_CITATION');
-	}
+	setTask('Citation Appeal', 'Y', 'N', 'FD_FLDINSP_CITATION');
+}
 
 if (wfTask == 'Follow-Up Inspection' && wfStatus == 'Non-Compliant') {
 	inspCancelAll();
-	closeTask('Status','Non-Compliant','Non-Compliant','');
-	setTask('Operating Permit','N','Y');
-	childId=createChild('Fire','Site Info','NA','NA',capName);
-	updateAppStatus('Active','Created from' + capIDString,childId);
-	aa.cap.copyCapWorkDesInfo(capId,childId);
+	closeTask('Status', 'Non-Compliant', 'Non-Compliant', '');
+	setTask('Operating Permit', 'N', 'Y');
+	childId = createChild('Fire', 'Site Info', 'NA', 'NA', capName);
+	updateAppStatus('Active', 'Created from' + capIDString, childId);
+	aa.cap.copyCapWorkDesInfo(capId, childId);
 	copyAppSpecific(childId);
 	copyASITables(capId, childId);
 	copyConditions(capId, childId);
@@ -47,30 +47,34 @@ if (wfTask == 'Follow-Up Inspection' && wfStatus == 'Non-Compliant') {
 	removeASITable('INSPECTION TYPES');
 	removeASITable('REDUCTIONS');
 	removeASITable('FEES AND CHARGES');
-	fireInspDist = getGISInfo('CITYOFRC','Fire Inspection Areas','Id');
-	fireInspector = lookup('EMSE:FDINSPECTOR:LOOKUP',fireInspDist);
+	fireInspDist = getGISInfo('CITYOFRC', 'Fire Inspection Areas', 'Id');
+	fireInspector = lookup('EMSE:FDINSPECTOR:LOOKUP', fireInspDist);
 	logDebug('fireInspDist = ' + fireInspDist + ', fireInspector = ' + fireInspector);
-	if(fireInspector) assignCap(fireInspector);
-	if(fireInspector) assignTask('Initial Inspection',fireInspector);
-	if(fireInspector)          scheduleInspection('Initial Inspection',0,fireInspector,null,null);
-	else           scheduleInspection('Initial Inspection',0,currentUserID,null,null);
+	if (fireInspector)
+		assignCap(fireInspector);
+	if (fireInspector)
+		assignTask('Initial Inspection', fireInspector);
+	if (fireInspector)
+		scheduleInspection('Initial Inspection', 0, fireInspector, null, null);
+	else
+		scheduleInspection('Initial Inspection', 0, currentUserID, null, null);
 	capId = holdId;
-	}
+}
 
 //replaced branch(EMSE:Fire:WorkflowTaskAssignment)
 fireWorkflowTaskAssignment();
 if (wfTask == 'Citation Appeal' && wfStatus == 'Decision Rendered') {
-	setTask('Appeal to Superior Court','Y','N','FD_FLDINSP_CITATION');
-	}
+	setTask('Appeal to Superior Court', 'Y', 'N', 'FD_FLDINSP_CITATION');
+}
 
-if (wfTask == 'Status' && matches(wfStatus,'Building Demolished','Suite/Unit Closed')) {
-	updateAppStatus('Vacant','Status changed to vacant via script');
-	}
+if (wfTask == 'Status' && matches(wfStatus, 'Building Demolished', 'Suite/Unit Closed')) {
+	updateAppStatus('Vacant', 'Status changed to vacant via script');
+}
 
-if (wfTask == 'Status' && matches(wfStatus,'Schedule Annual')) {
-	childId=createChild('Fire','Site Info','NA','NA',capName);
-	updateAppStatus('Active','Created from' + capIDString,childId);
-	aa.cap.copyCapWorkDesInfo(capId,childId);
+if (wfTask == 'Status' && matches(wfStatus, 'Schedule Annual')) {
+	childId = createChild('Fire', 'Site Info', 'NA', 'NA', capName);
+	updateAppStatus('Active', 'Created from' + capIDString, childId);
+	aa.cap.copyCapWorkDesInfo(capId, childId);
 	copyAppSpecific(childId);
 	copyASITables(capId, childId);
 	copyConditions(capId, childId);
@@ -84,15 +88,19 @@ if (wfTask == 'Status' && matches(wfStatus,'Schedule Annual')) {
 	removeASITable('INSPECTION TYPES');
 	removeASITable('REDUCTIONS');
 	removeASITable('FEES AND CHARGES');
-	fireInspDist = getGISInfo('CITYOFRC','Fire Inspection Areas','Id');
-	fireInspector = lookup('EMSE:FDINSPECTOR:LOOKUP',fireInspDist);
+	fireInspDist = getGISInfo('CITYOFRC', 'Fire Inspection Areas', 'Id');
+	fireInspector = lookup('EMSE:FDINSPECTOR:LOOKUP', fireInspDist);
 	logDebug('fireInspDist = ' + fireInspDist + ', fireInspector = ' + fireInspector);
-	if(fireInspector) assignCap(fireInspector);
-	if(fireInspector) assignTask('Initial Inspection',fireInspector);
-	if(fireInspector)          scheduleInspection('Initial Inspection',0,fireInspector,null,null);
-	else           scheduleInspection('Initial Inspection',0,currentUserID,null,null);
+	if (fireInspector)
+		assignCap(fireInspector);
+	if (fireInspector)
+		assignTask('Initial Inspection', fireInspector);
+	if (fireInspector)
+		scheduleInspection('Initial Inspection', 0, fireInspector, null, null);
+	else
+		scheduleInspection('Initial Inspection', 0, currentUserID, null, null);
 	capId = holdId;
-	}
+}
 
 // DISABLED: WTUA:Fire/Site Info/NA/NA:62
 // var rcFireInspArea = getGISInfoArray2('CITYOFRC','Fire Inspection Areas','Id',-5,'Feet');
@@ -129,13 +137,12 @@ if (wfTask == 'Status' && matches(wfStatus,'Schedule Annual')) {
 
 //replaced branch(EMSE:Fire:WorkflowTaskAssignment)
 fireWorkflowTaskAssignment();
-if (wfTask=='Operating Permit' && wfStatus=='Issue Permit') {
-	editAppSpecific('KEYDATES.Issued Date',sysDateMMDDYYYY);
-	inspDate=getInspectionDateByType('Initial Inspection');
-	expDate=dateAddMonths(inspDate,24);
-	editAppSpecific('KEYDATES.Expiration Date',expDate);
-	}
+if (wfTask == 'Operating Permit' && wfStatus == 'Issue Permit') {
+	editAppSpecific('KEYDATES.Issued Date', sysDateMMDDYYYY);
+	inspDate = getInspectionDateByType('Initial Inspection');
+	expDate = dateAddMonths(inspDate, 24);
+	editAppSpecific('KEYDATES.Expiration Date', expDate);
+}
 
 // DISABLED: WTUA:Fire/Site Info/NA/NA:99
 // email( 'awilliams@accela.com', 'tst_awilliams@accela.com','ASIUA from Rancho for: ' + capId.getCustomID(), debug);
-

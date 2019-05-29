@@ -5,6 +5,5 @@
 // 	}
 
 if (AInfo['CVWD Review'] != 'CHECKED') {
-	closeTask('CVWD Review', 'Not Required', 'Closed via Script','','BLD_TRADE_RCSUB');
-	}
-
+	closeTask('CVWD Review', 'Not Required', 'Closed via Script', '', 'BLD_TRADE_RCSUB');
+}

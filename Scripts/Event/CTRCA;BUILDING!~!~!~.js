@@ -6,4 +6,3 @@
 // 	licProfObject = lpArray[0];
 // 	br_nch('LPUA:Building/*/*/*');
 // 	}
-

@@ -1,10 +1,10 @@
 
 if (AInfo['GENERAL INFO.Tract Map Number'] != null) {
 	newAltID = 'SUBTT' + AInfo['GENERAL INFO.Tract Map Number'];
-	var updateResut = aa.cap.updateCapAltID(capId,newAltID);
-	}
+	var updateResut = aa.cap.updateCapAltID(capId, newAltID);
+}
 
-email('sid.siphomsay@cityofrc.us','noreply@cityofrc.us',cap.getCapType().getAlias().toUpperCase() + ' - a new application was submitted via Accelerate: ' + newAltID, 'A(n) ' + cap.getCapType().getAlias() + ' application (' + newAltID + ') was submitted via Accelerate. Please review it and proceed as appropriate.');
+email('sid.siphomsay@cityofrc.us', 'noreply@cityofrc.us', cap.getCapType().getAlias().toUpperCase() + ' - a new application was submitted via Accelerate: ' + newAltID, 'A(n) ' + cap.getCapType().getAlias() + ' application (' + newAltID + ') was submitted via Accelerate. Please review it and proceed as appropriate.');
 // DISABLED: CTRCA:Planning/Subdivision/Tentative Tract Map/*:25
 // $$altID$$ = newAltID;
 // DISABLED: CTRCA:Planning/Subdivision/Tentative Tract Map/*:30
@@ -12,4 +12,3 @@ email('sid.siphomsay@cityofrc.us','noreply@cityofrc.us',cap.getCapType().getAlia
 // 	br_nch('ACA:EMSE:ReceivedNotification');
 
 // 	}
-

@@ -1,21 +1,20 @@
 
-if (feeExists('MI001','NEW')) {
+if (feeExists('MI001', 'NEW')) {
 	//replaced branch(BLDEMSEFee:MiscFee)
-bldMiscFee();
-	}
+	bldMiscFee();
+}
 
-if (feeExists('ELERESPLN','NEW') || feeExists('ELERESINSP','NEW')) {
+if (feeExists('ELERESPLN', 'NEW') || feeExists('ELERESINSP', 'NEW')) {
 	//replaced branch(BLDEMSEFee:ElectricalFeeNoSplit)
-bldElecFeeNoSplit();
-	}
+	bldElecFeeNoSplit();
+}
 
-if (feeExists('MECHRESPLN','NEW') || feeExists('MECHRESINSP','NEW')) {
+if (feeExists('MECHRESPLN', 'NEW') || feeExists('MECHRESINSP', 'NEW')) {
 	//replaced branch(BLDEMSEFee:MechanicalFeeNoSplit)
-bldMechFeeNoSplit();
-	}
+	bldMechFeeNoSplit();
+}
 
-if (feeExists('PLMRESPLN','NEW') || feeExists('PLMRESINSP','NEW')) {
+if (feeExists('PLMRESPLN', 'NEW') || feeExists('PLMRESINSP', 'NEW')) {
 	//replaced branch(BLDEMSEFee:PlumbingFeeNoSplit)
-bldPlumbingFeeNoSplit();
-	}
-
+	bldPlumbingFeeNoSplit();
+}

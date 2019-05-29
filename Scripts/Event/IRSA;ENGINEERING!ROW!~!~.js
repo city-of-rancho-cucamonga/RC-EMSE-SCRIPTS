@@ -5,6 +5,5 @@
 // 	}
 
 if (inspResult == 'Corrections Needed') {
-	emailContact('Your inspection generated a corrections notice on ROW permit: ' +capIDString,'<p>Corrections are required on your Engineering Construction Permit (' + capIDString + ').</p><p>Please use the online Accelerate at http://aca.accela.com  to review the correction(s) relating to the inspection(s) or contact the Engineering Inspector for further details at 909-477-2740.</p><p>Thank you,<br/>City of Rancho Cucamonga<br/>Engineering Department</p>');
-	}
-
+	emailContact('Your inspection generated a corrections notice on ROW permit: ' + capIDString, '<p>Corrections are required on your Engineering Construction Permit (' + capIDString + ').</p><p>Please use the online Accelerate at http://aca.accela.com  to review the correction(s) relating to the inspection(s) or contact the Engineering Inspector for further details at 909-477-2740.</p><p>Thank you,<br/>City of Rancho Cucamonga<br/>Engineering Department</p>');
+}

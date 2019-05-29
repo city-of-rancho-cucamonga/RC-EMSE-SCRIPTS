@@ -1,4 +1,4 @@
-
+// TODO: refactor
 showDebug = 1;
 showMessage= false;
 //replaced branch(EMSE:GlobalFlags)

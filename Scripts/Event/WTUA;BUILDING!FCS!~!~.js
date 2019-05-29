@@ -1,15 +1,15 @@
 
 if (wfTask == 'Application Submittal' && wfStatus == 'Resubmitted') {
-	editTaskDueDate('FCS Review',dateAdd(null,5,'Y'));
-	}
+	editTaskDueDate('FCS Review', dateAdd(null, 5, 'Y'));
+}
 
 if (wfTask == 'FCS Review' && wfStatus == 'As Built Approved') {
-	setTask('FCS Review','N','Y');
-	}
+	setTask('FCS Review', 'N', 'Y');
+}
 
 if (wfTask == 'Inspections' && wfStatus == 'As-Built Required') {
 	activateTask('FCS Review');
-	}
+}
 
 // DISABLED: WTUA:Building/FCS/*/*:04
 // if (wfTask == 'Inspections' && matches(wfStatus,'Note') && AInfo['FIRE SITE INFO RECORD.Fire Site Info Record'] != null) {
@@ -18,4 +18,3 @@ if (wfTask == 'Inspections' && wfStatus == 'As-Built Required') {
 // 	var recSiteName = getRecAppName(parentSiteRecId);
 // 	comment('what is recSiteName = ' + recSiteName);
 // 	}
-

@@ -16,12 +16,11 @@
 
 if (calcValue >= 100000) {
 	//replaced branch(ENG:CDD:EMSE:UPDATEASI)
-engCddUpdateASI();
-	}
+	engCddUpdateASI();
+}
 
-var recCDDId = childGetByCapType('Engineering/Environmental/CDD/NA',null,capId);
+var recCDDId = childGetByCapType('Engineering/Environmental/CDD/NA', null, capId);
 //comment('what is recCDDId = ' + recCDDId);
 if (calcValue < 100000 && recCDDId) {
 	bldReferToEngCDD();
-	}
-
+}

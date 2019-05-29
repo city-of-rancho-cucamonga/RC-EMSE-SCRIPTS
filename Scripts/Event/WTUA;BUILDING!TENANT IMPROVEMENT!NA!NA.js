@@ -1,58 +1,58 @@
 
 if (validateGisObjects()) {
 	//replaced branch(BLD:EMSEUpdateGISObjects)
-bldUpdateGisObjects();
-	}
+	bldUpdateGisObjects();
+}
 
 if (wfTask == 'Certificate of Occupancy' && wfStatus == 'Final CO Issued') {
-	closeTask('Closed','Closed','Closed via Script from CofO','');
-	}
+	closeTask('Closed', 'Closed', 'Closed via Script from CofO', '');
+}
 
 if (wfTask == 'Application Submittal' && wfStatus == 'Submitted' && calcValue >= 100000) {
 	//replaced branch(ENG:EMSECreateEnvCDDRecord)
-engCreateEnvCddRecord();
-	}
+	engCreateEnvCddRecord();
+}
 
-if (isTaskActive('CVWD Review') && isTaskStatus('CVWD Review','Not Required')) {
-	setTask('CVWD Review','N','Y','BLD_TI_SUB');
-	}
+if (isTaskActive('CVWD Review') && isTaskStatus('CVWD Review', 'Not Required')) {
+	setTask('CVWD Review', 'N', 'Y', 'BLD_TI_SUB');
+}
 
-if (isTaskActive('Special Districts Review') && isTaskStatus('Special Districts Review','Not Required')) {
-	setTask('Special Districts Review','N','Y','BLD_TI_SUB');
-	}
+if (isTaskActive('Special Districts Review') && isTaskStatus('Special Districts Review', 'Not Required')) {
+	setTask('Special Districts Review', 'N', 'Y', 'BLD_TI_SUB');
+}
 
-if (isTaskActive('SB County Health Review') && isTaskStatus('SB County Health Review','Not Required')) {
-	setTask('SB County Health Review','N','Y','BLD_TI_SUB');
-	}
+if (isTaskActive('SB County Health Review') && isTaskStatus('SB County Health Review', 'Not Required')) {
+	setTask('SB County Health Review', 'N', 'Y', 'BLD_TI_SUB');
+}
 
 if (wfTask == 'Permit Issuance' && wfStatus == 'Ready to Issue' && feeExists('CD020', 'NEW') && calcValue > 100000 && getSumUnitAmount() > 0) {
 	updateFee('CD010', 'ENG_CD', 'FINAL', getSumUnitAmount(), 'N');
-	}
+}
 
-if (wfTask=='Engineering Review' && matches(wfStatus,'Approved', 'Approved W/Corrections')) {
+if (wfTask == 'Engineering Review' && matches(wfStatus, 'Approved', 'Approved W/Corrections')) {
 	//replaced branch(ENG:CDD:EMSE:UPDATEASI)
-engCddUpdateASI();
-	}
+	engCddUpdateASI();
+}
 
 if (wfTask == 'Building Review' && wfStatus == 'Approved' && AInfo['Operational Permit Required'] == 'Yes') {
 	editAppSpecific('FIRE SITE INFO RECORD.Operational Permit Required', 'Yes');
-	}
+}
 
 if (wfTask == 'Building Review' && wfStatus == 'Approved' && AInfo['Operational Permit Required'] == 'No') {
 	editAppSpecific('FIRE SITE INFO RECORD.Operational Permit Required', 'No');
-	}
+}
 
 if (wfTask == 'Building Review' && wfStatus == 'Approved' && AInfo['Maximum Occupancy Load'] > 0) {
 	editAppSpecific('FIRE SITE INFO RECORD.Max. Occupancy Load', AInfo['Maximum Occupancy Load']);
-	}
+}
 
 if (isTaskActive('Operating Permit')) {
-	setTask('FCS Review','Y','N','BLD_TI_V360');
-	}
+	setTask('FCS Review', 'Y', 'N', 'BLD_TI_V360');
+}
 
 if (isTaskActive('FCS Review')) {
-	setTask('Review Consolidation','N','N','BLD_TI_V360');
-	}
+	setTask('Review Consolidation', 'N', 'N', 'BLD_TI_V360');
+}
 
 // DISABLED: WTUA:Building/Tenant Improvement/NA/NA:85 SELF-HUAL
 // if (wfTask == 'Environmental Review' & wfStatus == 'Approved' & AInfo['Self Haul'] == 'Yes') {
@@ -74,4 +74,3 @@ if (isTaskActive('FCS Review')) {
 // if (wfTask == 'Building Review' && wfStatus == 'Approved' && AInfo['Operational Permit Required'] == 'Yes') {
 // 	email('sid.siphomsay@cityofrc.us, ssiphomsay@yahoo.com','noreply@cityofrc.us','Building Review Approved: Operational Permit Required!','This is a text area.');
 // 	}
-
