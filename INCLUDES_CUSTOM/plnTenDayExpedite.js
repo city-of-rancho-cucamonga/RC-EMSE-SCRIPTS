@@ -4,8 +4,7 @@ function plnTenDayExpedite() {
 	loadTaskSpecific(TSI, capId);
 	var alertText = ' ';
 	for (y in TSI)
-		alertText += y + ':' + TSI[y] + ';
-		';
+		alertText += y + ':' + TSI[y] + ';';
 	comment('The alertText is ' + alertText);
 	if (AInfo['10 Day Expedited Review'] == 'CHECKED') {
 		editTaskDueDate('Planning Review', dateAdd(null, 11, 'Y'));
