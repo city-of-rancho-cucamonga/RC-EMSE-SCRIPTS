@@ -28,10 +28,11 @@ function setTask(wfstr, isOpen, isComplete) // optional process name isOpen, isC
 			var completeFlag = fTask.getCompleteFlag();
 
 			if (useProcess)
-				aa.workflow.adjustTask(itemCap, stepnumber, processID, isOpen, isComplete, null, null)else
-					aa.workflow.adjustTask(itemCap, stepnumber, isOpen, isComplete, null, null)
+				aa.workflow.adjustTask(itemCap, stepnumber, processID, isOpen, isComplete, null, null);
+			else
+				aa.workflow.adjustTask(itemCap, stepnumber, isOpen, isComplete, null, null);
 
-					logDebug("set Workflow Task: " + wfstr);
+			logDebug("set Workflow Task: " + wfstr);
 		}
 	}
 }
