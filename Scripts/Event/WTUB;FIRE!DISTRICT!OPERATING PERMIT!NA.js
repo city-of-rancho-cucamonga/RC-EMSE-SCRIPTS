@@ -1,5 +1,5 @@
 
-if (wfTask == 'Permit Coordination' && wfStatus == 'Ready to Issue' && isTaskActive('Follow-Up Inspection'); ) {
+if (wfTask == 'Permit Coordination' && wfStatus == 'Ready to Issue' && isTaskActive('Follow-Up Inspection')) {
 	cancel = true;
 	showMessage = true;
 	logMessage('Cannot close the close until all inspections and violations have been resolved');
