@@ -16,10 +16,7 @@ function handleError(err, context) {
 	body.attachments = [{"fallback": "Full Debug Output"}];
 	body.attachments[0].text = debug;
 
-	// this is a ATL SCRIPT Notification
-	var apiURL = "https://hooks.slack.com/services/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";
-
-	var result = aa.httpClient.post(apiURL, headers, JSON.stringify(body));
+	var result = aa.httpClient.post(SLACKURL, headers, JSON.stringify(body));
 	if (!result.getSuccess()) {
 		logDebug("Slack get anonymous token error: " + result.getErrorMessage());
 	} else {
