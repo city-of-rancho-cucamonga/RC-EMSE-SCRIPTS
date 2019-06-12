@@ -1,4 +1,4 @@
-// adding a comment 
+// adding a comment , modifying the comment
 
 var recAsgnStaff = capDetail.getAsgnStaff();
 comment('What is recAsgnStaff = ' + recAsgnStaff);
