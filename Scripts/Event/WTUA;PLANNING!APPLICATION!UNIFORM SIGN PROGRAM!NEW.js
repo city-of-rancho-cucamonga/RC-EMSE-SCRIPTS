@@ -1,5 +1,5 @@
 
-if (wfTask == 'Staff Report' - á && wfStatus == 'Approved') {
+if (wfTask == 'Staff Report' && wfStatus == 'Approved') {
 	var rcUserAssigned = '';
 	if (capDetail.getAsgnStaff() != null)
 		rcUserAssigned = capDetail.getAsgnStaff();

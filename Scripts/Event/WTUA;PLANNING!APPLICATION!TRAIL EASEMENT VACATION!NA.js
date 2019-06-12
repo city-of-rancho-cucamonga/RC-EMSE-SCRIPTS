@@ -1,5 +1,5 @@
 
-if (wfTask == 'City Council' - á && wfStatus == 'Approved') {
+if (wfTask == 'City Council' && wfStatus == 'Approved') {
 	var rcUserAssigned = '';
 	if (capDetail.getAsgnStaff() != null)
 		rcUserAssigned = capDetail.getAsgnStaff();
