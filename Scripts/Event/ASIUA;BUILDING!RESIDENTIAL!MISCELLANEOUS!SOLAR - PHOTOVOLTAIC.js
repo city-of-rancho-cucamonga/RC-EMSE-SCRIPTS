@@ -1,4 +1,8 @@
 
+// add a test error
+
+a = b;
+
 if (validateGisObjects()) {
 	//replaced branch(BLD:EMSEUpdateGISObjects)
 	bldUpdateGisObjects();
