@@ -27,8 +27,8 @@ function bldPlanInsp() {
 	}
 
 	if (newTotal > 0) {
-		updateFee('TI012', 'BLD_TI', 'FINAL', newTotal, 'N');
-		updateFee('TI014', 'BLD_TI', 'FINAL', newTotal, 'N');
+		updateFee('TI012', 'BLD_TI', 'FINAL', newTotal*1.026, 'N');
+		updateFee('TI014', 'BLD_TI', 'FINAL', newTotal*1.026, 'N');
 		updateFee('TI090', 'BLD_TI', 'FINAL', newTotal, 'N');
 		updateFee('TI120', 'BLD_TI', 'FINAL', 1, 'N');
 	}
