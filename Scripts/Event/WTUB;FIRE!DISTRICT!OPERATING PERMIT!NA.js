@@ -2,7 +2,7 @@
 if (wfTask == 'Permit Coordination' && wfStatus == 'Ready to Issue' && isTaskActive('Follow-Up Inspection')) {
 	cancel = true;
 	showMessage = true;
-	logMessage('Cannot close the close until all inspections and violations have been resolved');
+	comment('Cannot close the close until all inspections and violations have been resolved');
 }
 
 wfAsgnArray = new Array();
@@ -15,5 +15,5 @@ for (x in wfAsgnArray)
 // if (wfTask == 'Permit Issuance' && wfStatus == 'Issued' && openWFTasks) {
 // 	cancel=true;
 // 	showMessage=true;
-// 	logMessage('Cannot close the close until all inspections and violations have been resolved');
+// 	comment('Cannot close the close until all inspections and violations have been resolved');
 // 	}

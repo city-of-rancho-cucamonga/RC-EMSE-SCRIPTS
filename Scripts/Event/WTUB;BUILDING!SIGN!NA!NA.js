@@ -10,5 +10,5 @@ if (pId) {
 if (wfTask == 'Permit Issuance' && wfStatus == 'Issued' && pId && feeRecBal > 0) {
 	cancel = true;
 	showMessage = true;
-	logMessage('There is a balance due of $' + feeRecBal + ' on the parent record of ' + pId.getCustomID());
+	comment('There is a balance due of $' + feeRecBal + ' on the parent record of ' + pId.getCustomID());
 }

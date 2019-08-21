@@ -5,7 +5,7 @@ recFeesNew = feeAmountAll(capId, 'NEW');
 // if (matches(wfTask,'Permit Issuance','Closed') && matches(wfStatus,'Issued','Finalized') && (balanceDue > 0 || recFeesNew > 0)) {
 // 	showMessage = true;
 // 	cancel = true;
-// 	logMessage('Unable to issue permit because there is a balance due of $ ' + balanceDue);
+// 	comment('Unable to issue permit because there is a balance due of $ ' + balanceDue);
 // 	}
 
 var feeList = loadFees();
@@ -28,7 +28,7 @@ for (xxx in feeList)
 if (matches(wfTask, 'Permit Issuance', 'Closed') && matches(wfStatus, 'Issued', 'Finalized') && (balanceDue > 0 || (recFeesNew > 0 && engFeeTotal.toFixed(2) != recFeesNew.toFixed(2)))) {
 	showMessage = true;
 	cancel = true;
-	logMessage('Unable to issue permit because there is a balance due of $ ' + balanceDue);
+	comment('Unable to issue permit because there is a balance due of $ ' + balanceDue);
 }
 
 var incompleteTasks = false;
@@ -40,5 +40,5 @@ if (wfTask == 'Closed' && wfStatus == 'Finalized') {
 if (incompleteTasks) {
 	cancel = true;
 	showMessage = true;
-	logMessage('AdHoc Tasks must be complete to finalize the record');
+	comment('AdHoc Tasks must be complete to finalize the record');
 }

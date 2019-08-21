@@ -1,7 +1,7 @@
 
 if (wfTask == 'Application Submittal' && wfStatus == 'Accepted' && balanceDue > 0 && appTypeArray[3] != 'Permanent') {
 	showMessage = true;
-	logMessage('Please double check that fees have been paid.  There currently is a balance due of $' + balanceDue);
+	comment('Please double check that fees have been paid.  There currently is a balance due of $' + balanceDue);
 }
 
 var childDRCId = undefined;

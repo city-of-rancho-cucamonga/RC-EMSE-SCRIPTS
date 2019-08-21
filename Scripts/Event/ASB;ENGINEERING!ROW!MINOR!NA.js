@@ -6,5 +6,5 @@ if (currentUserID.indexOf('PUBLICUSER') != 0) {
 if (currentUserID.indexOf('PUBLICUSER') != 0 && typeof(WORKITEMS) != 'object') {
 	cancel = true;
 	showMessage = true;
-	logMessage('You must have at least one row in the Work Items ASI Table section');
+	comment('You must have at least one row in the Work Items ASI Table section');
 }

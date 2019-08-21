@@ -10,5 +10,5 @@ if (!matches(childIdCEQA, false, undefined)) {
 if (wfTask == 'Plan Spec and Estimate Finalization' && wfStatus == 'Signed' && matches(childRecStatus, 'Pending', 'In Review', 'Incomplete', 'Draft Complete', 'Open for Comments')) {
 	showMessage = true;
 	cancel = true;
-	logMessage('Cannot update worklflow because the CEQA Review is not completed');
+	comment('Cannot update worklflow because the CEQA Review is not completed');
 }

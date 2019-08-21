@@ -2,7 +2,7 @@
 if (wfTask == 'Signed Agreements' && wfStatus == 'Completed' && balanceDue > 0) {
 	cancel = true;
 	showMessage = true;
-	logMessage('Unable to update the Signed Agreements workflow because there is a balance due  $ ' + balanceDue);
+	comment('Unable to update the Signed Agreements workflow because there is a balance due  $ ' + balanceDue);
 }
 
 correctReqd = false;
@@ -14,5 +14,5 @@ for (x in wfTaskNames)
 if (wfTask == 'City Council' && wfStatus == 'Schedule' && correctReqd) {
 	cancel = true;
 	showMessage = true;
-	logMessage('Unable to schedule City Council because of a review has corrections required.');
+	comment('Unable to schedule City Council because of a review has corrections required.');
 }

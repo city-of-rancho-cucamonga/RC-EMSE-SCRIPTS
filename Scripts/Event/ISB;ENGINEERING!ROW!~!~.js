@@ -8,5 +8,5 @@ if (!(matches(capStatus, 'Issued', 'CC Approved', 'Final Inspection Complete', '
 if (capHasExpiredProfRC('CONTRACTOR')) {
 	cancel = true;
 	showMessage = true;
-	logMessage("Unable to schedule inspection at this time.  The contractor's licensing or insurance information has expired in our system and needs to be updated.  Please contact the Engineering Department at (909) 477-2740 ext. 4077 to update the expired information.");
+	comment("Unable to schedule inspection at this time.  The contractor's licensing or insurance information has expired in our system and needs to be updated.  Please contact the Engineering Department at (909) 477-2740 ext. 4077 to update the expired information.");
 }
