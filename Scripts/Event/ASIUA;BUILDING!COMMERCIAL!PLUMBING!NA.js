@@ -6,5 +6,6 @@ if (validateGisObjects()) {
 
 if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
 	//replaced branch(BLDEMSEFee:PlumbingFee)
-	bldPlumbingFee();
+	//replace bldPlumbingFee() with bldPlumbingFeeNoSplit()
+	bldPlumbingFeeNoSplit();
 }
