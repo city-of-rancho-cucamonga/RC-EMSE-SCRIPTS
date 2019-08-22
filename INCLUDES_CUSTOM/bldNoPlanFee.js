@@ -49,7 +49,7 @@ function bldNoPlanFee() {
 	// 	}
 
 	if (newNPTotal > 0) {
-		updateFee('NPRESINSP', 'BLD_NP_RES', 'FINAL', newNPTotal, 'Y');
+		updateFee('NPRESINSP', 'BLD_NP_RES', 'FINAL', newNPTotal*1.026, 'Y');
 		updateFee('NPRESTECH', 'BLD_NP_RES', 'FINAL', 1, 'Y');
 		updateFee('NPPROCESSFEE', 'BLD_NP_RES', 'FINAL', 1, 'Y', 'N');
 		updateFee('NPRESGP', 'BLD_NP_RES', 'FINAL', 1, 'Y');
