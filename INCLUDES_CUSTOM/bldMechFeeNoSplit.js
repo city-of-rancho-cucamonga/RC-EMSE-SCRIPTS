@@ -11,7 +11,7 @@ function bldMechFeeNoSplit() {
 
 	if (newMecTotal > 0) {
 		removeFee('MECHRESPLN', 'FINAL');
-		updateFee('MECHRESINSP', 'BLD_MECH_RES', 'FINAL', newMecTotal / .5, 'N');
+		updateFee('MECHRESINSP', 'BLD_MECH_RES', 'FINAL', newMecTotal*1.026 / .5, 'N');
 	}
 
 	if (!(feeExists('MI115') || feeExists('MI006'))) {
