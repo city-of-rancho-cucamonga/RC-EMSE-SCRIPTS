@@ -71,13 +71,13 @@ function bldSolarFee() {
 
 		// DISABLED: BuildingSolarFee:Lookup:z130
 		// if (typeof(WORKDESCRIPTION) == 'object') {
-		// 	for (xxx in WORKDESCRIPTION) if (WORKDESCRIPTION [xxx]['Type of Work'] == 'Solar / Photovoltaic - 10.1 GÇô 30 Kw') newRSolarTotal += parseInt(WORKDESCRIPTION [xxx]['Quantity']) * 552.00;
+		// 	for (xxx in WORKDESCRIPTION) if (WORKDESCRIPTION [xxx]['Type of Work'] == 'Solar / Photovoltaic - 10.1 GÃ‡Ã´ 30 Kw') newRSolarTotal += parseInt(WORKDESCRIPTION [xxx]['Quantity']) * 552.00;
 		// 	comment('What is newRSolarTotal = ' + newRSolarTotal);
 		// 	}
 
 		// DISABLED: BuildingSolarFee:Lookup:z140
 		// if (typeof(WORKDESCRIPTION) == 'object') {
-		// 	for (xxx in WORKDESCRIPTION) if (WORKDESCRIPTION [xxx]['Type of Work'] == 'Solar / Photovoltaic - 10.1 GÇô 30 Kw w/ electrical service upgrade') newRSolarTotal += parseInt(WORKDESCRIPTION [xxx]['Quantity']) * 814.00;
+		// 	for (xxx in WORKDESCRIPTION) if (WORKDESCRIPTION [xxx]['Type of Work'] == 'Solar / Photovoltaic - 10.1 GÃ‡Ã´ 30 Kw w/ electrical service upgrade') newRSolarTotal += parseInt(WORKDESCRIPTION [xxx]['Quantity']) * 814.00;
 		// 	comment('What is newRSolarTotal = ' + newRSolarTotal);
 		// 	}
 
@@ -120,8 +120,8 @@ function bldSolarFee() {
 	// 	}
 
 	if (newRSolarTotal > 0) {
-		updateFee('PV011', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
-		updateFee('PV021', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
+		updateFee('PV011', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026, 'N');
+		updateFee('PV021', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026, 'N');
 		updateFee('PV060', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
 		updateFee('PV070', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
 	}
