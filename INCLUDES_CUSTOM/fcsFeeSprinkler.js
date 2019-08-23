@@ -299,8 +299,8 @@ function fcsFeeSprinkler() {
 	// 	}
 
 	if (newFCSSprinklerTotal > 0) {
-		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSSprinklerTotal, 'N');
-		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSSprinklerTotal, 'N');
+		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSSprinklerTotal*1.026, 'N');
+		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSSprinklerTotal*1.026, 'N');
 	}
 
 }
