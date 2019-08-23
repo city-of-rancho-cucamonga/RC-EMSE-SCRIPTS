@@ -33,7 +33,7 @@ function bldSepticFee() {
 	}
 	//end replaced branch: BuildingSepticFee:Lookup;
 	if (newSepticTotal > 0) {
-		updateFee('SE002', 'BLD_SEPTIC', 'FINAL', newSepticTotal, 'N');
+		updateFee('SE002', 'BLD_SEPTIC', 'FINAL', newSepticTotal*1.026, 'N');
 		updateFee('SE006', 'BLD_SEPTIC', 'FINAL', newSepticTotal, 'N');
 		updateFee('SE009', 'BLD_SEPTIC', 'FINAL', newSepticTotal, 'N');
 	}
