@@ -66,8 +66,8 @@ function bldSignFee() {
 	// 	}
 
 	if (newSignTotal > 0) {
-		updateFee('SP011', 'BLD_SIGN_AR', 'FINAL', newSignTotal, 'N');
-		updateFee('SP021', 'BLD_SIGN_AR', 'FINAL', newSignTotal, 'N');
+		updateFee('SP011', 'BLD_SIGN_AR', 'FINAL', newSignTotal*1.026, 'N');
+		updateFee('SP021', 'BLD_SIGN_AR', 'FINAL', newSignTotal*1.026, 'N');
 		updateFee('SP050', 'BLD_SIGN_AR', 'FINAL', newSignTotal, 'N');
 		updateFee('SP060', 'BLD_SIGN_AR', 'FINAL', newSignTotal, 'N');
 	}
