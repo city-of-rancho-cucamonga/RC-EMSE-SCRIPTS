@@ -676,7 +676,7 @@ function bldMiscFee() {
 	}
 	//end replaced branch: BuildingMiscFee:Lookup;
 	if (newMisc100Total > 0) {
-		updateFee('MI001', 'BLD_MISC', 'FINAL', newMisc100Total, 'N');
+		updateFee('MI001', 'BLD_MISC', 'FINAL', newMisc100Total*1.026, 'N');
 	}
 
 	if (newMiscTotal > 0) {
