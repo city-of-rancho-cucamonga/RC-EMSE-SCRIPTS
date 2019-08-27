@@ -27,6 +27,12 @@ function bldNoPlanFee() {
 				if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'HVAC (Replacement Only/Same Location)')
 					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
 		}
+		
+		if (typeof(MECHANICALINFORMATION) == 'object') {
+			for (xxx in MECHANICALINFORMATION)
+				if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'Package unit or split system')
+					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 197.00;
+		}
 
 		if (typeof(PLUMBINGINFORMATION) == 'object') {
 			for (xxx in PLUMBINGINFORMATION)
