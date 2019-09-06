@@ -29,6 +29,14 @@ if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 
 	comment('Final inspection cannot be scheduled at this time. Please call Planning to schedule a Planning Final inspection.');
 }
 
+if (matches(inspType, 'Final Inspection') && appHasCondition('No C of O - Engineering Impact Fees Due', 'Applied', null)) {
+	cancel = true;
+	showMessage = true;
+	comment('Final inspection cannot be scheduled at this time. No C of O - Engineering Impact Fees Due.');
+}
+
+
+
 if (matches(inspType, 'Final Plumbing', 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'OWTS As-Built', null)) {
 	cancel = true;
 	showMessage = true;
