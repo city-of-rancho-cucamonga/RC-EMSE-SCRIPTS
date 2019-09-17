@@ -54,7 +54,7 @@ if (appTypeArray[0] != 'Engineering' && !(matches(appTypeArray[1], 'CIP Permit',
 }
 
 parcelGIS = validateGisObjects();
-priAddrRec = PriAddressOnCap();
+priAddrRec = priAddressOnCap();
 var rcInitiatedBy = cap.getInitiatedProduct();
 logDebug('This cap was initiated by ' + rcInitiatedBy);
 if (!parcelGIS && !publicUser && priAddrRec != false && !(appMatch('Planning/Misc/Business License Review/NA')) && rcInitiatedBy != 'CodeOfficer' && rcInitiatedBy != 'AMO' && rcInitiatedBy != 'GOVXML_CLIENT') {

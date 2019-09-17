@@ -54,12 +54,12 @@ if (wfTask == 'Review Consolidation' && wfStatus == 'Revisions Approved') {
 
 // DISABLED: WTUA:Building/*/*/*:99  - notification to RCFD on approved FCS Reviews
 // if (wfTask == 'FCS Review' && matches(wfStatus,'Approved','As Built Approved')) {
-// 	priAddrRec = PriAddressOnCap();
+// 	priAddrRec = priAddressOnCap();
 // 	email('sid.siphomsay@cityofrc.us,jennifer.quan@cityofrc.us','noreply@cityofrc.us','FCS Review has been APPROVED on a permit.','<b> </b>Record:<b> </b> ' + capIDString + '<br /><b> </b>Address:<b> </b> ' + priAddrRec + '<br /><b> </b>Work Description:<b> </b>' + capName + '.');
 // 	}
 
 // DISABLED: WTUA:Building/*/*/*:TEST AR
 // if (wfTask == 'Application Submittal' && matches(wfStatus, 'Submitted', 'Resubmitted', 'Revisions') && isTaskActive('FCS Review')) {
-// 	priAddrRec = PriAddressOnCap();
+// 	priAddrRec = priAddressOnCap();
 // 	email('Alicia.Reister@cityofrc.us','noreply@cityofrc.us','A permit has been submitted for FCS Review: ' + capIDString + '.','<b> </b>Record:<b> </b> ' + capIDString + '<br /><b> </b>Address:<b> </b> ' + priAddrRec + '<br /><b> </b>Work Description:<b> </b>' + capName + '.');
 // 	}

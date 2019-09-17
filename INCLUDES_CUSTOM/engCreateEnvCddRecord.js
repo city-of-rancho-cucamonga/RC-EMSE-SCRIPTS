@@ -10,7 +10,7 @@ function engCreateEnvCddRecord() {
 	copyParcelGisObjects();
 	capId = holdId;
 	childIdCDDAltId = childIdCDD.getCustomID();
-	priAddrRec = PriAddressOnCap();
+	priAddrRec = priAddressOnCap();
 	email('Marissa.Ostos@cityofrc.us, scott.rapp@cityofrc.us, princess.wilson@cityofrc.us, sid.siphomsay@cityofrc.us', 'noreply@cityofrc.us', 'A new CDD record was created: ' + childIdCDDAltId, 'Please use Accela Automation to review the CDD Record ' + childIdCDDAltId + '. The PMT associated with this record is ' + capId.getCustomID() + ' with the primary address of ' + priAddrRec + '.');
 	editAppSpecific('CD INFORMATION.PMT Number', capIDString, childIdCDD);
 	editAppSpecific('CD INFORMATION.Project Size (Sq Ft)', getSumFromASIT('AREA INFORMATION', 'Area Square Footage'), childIdCDD);

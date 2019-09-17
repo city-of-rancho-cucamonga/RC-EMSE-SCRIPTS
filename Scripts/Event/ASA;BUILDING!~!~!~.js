@@ -5,7 +5,7 @@
 // createRefContactsFromCapContactsAndLink(capId,null,iArr,false,true,comparePeopleStandard);
 // DISABLED: ASA:Building/*/*/*:03
 // parcelGIS = validateGisObjects();
-// priAddrRec = PriAddressOnCap();
+// priAddrRec = priAddressOnCap();
 // DISABLED: ASA:Building/*/*/*:04
 // if (!parcelGIS && !publicUser && priAddrRec != false) {
 // 	addStdCondition('APO Condition','New Address');

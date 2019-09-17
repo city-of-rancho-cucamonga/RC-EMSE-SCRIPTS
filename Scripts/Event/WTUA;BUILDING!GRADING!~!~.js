@@ -13,6 +13,6 @@ if (wfTask == 'Grading Review' && wfStatus == 'As Built Approved') {
 }
 
 if (wfTask == 'Permit Issuance' && wfStatus == 'Issued') {
-	priAddrRec = PriAddressOnCap();
+	priAddrRec = priAddressOnCap();
 	email('AA.EnvironmentalPrograms@cityofrc.us', 'AA-NoReply@cityofrc.us', 'Grading permit has been issued: ' + capIDString, 'Grading permit ' + capIDString + ' has been issued. The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
 }

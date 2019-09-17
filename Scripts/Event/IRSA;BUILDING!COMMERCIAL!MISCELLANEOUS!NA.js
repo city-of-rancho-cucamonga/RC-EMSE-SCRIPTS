@@ -19,6 +19,6 @@ emailContact('Important information regarding your permit: ' +capIDString,      
  */
 
 if (matches(inspType, 'Final Inspection') && inspResult == 'Approved-Fire Access Req.') {
-	priAddrRec = PriAddressOnCap();
+	priAddrRec = priAddressOnCap();
 	email('Alicia.Reister@cityofrc.us, tammie.graciano@cityofrc.us, shane.adams@cityofrc.us', 'noreply@cityofrc.us', 'A permit requiring an Access Control inspection was finaled by Building and Safety.', '<b> </b>Record:<b> </b> ' + capIDString + '<br /><b> </b>Address:<b> </b> ' + priAddrRec + '<br /><b> </b>Work Description:<b> </b>' + capName + '.');
 }

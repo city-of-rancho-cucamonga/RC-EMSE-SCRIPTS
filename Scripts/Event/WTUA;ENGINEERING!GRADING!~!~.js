@@ -15,6 +15,6 @@ if (validateGisObjects()) {
 // 	}
 
 if (wfTask == 'Grading Review' && wfStatus == 'Approved') {
-	priAddrRec = PriAddressOnCap();
+	priAddrRec = priAddressOnCap();
 	email('AA.EnvironmentalPrograms@cityofrc.us', 'AA-NoReply@cityofrc.us', 'Grading Review has been Approved on: ' + capIDString, 'The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
 }

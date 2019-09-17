@@ -1,4 +1,4 @@
-function PriAddressOnCap()
+function priAddressOnCap()
 {
         // Prototype function to return Primary (or only) address as a string
 	// Optional parameter, cap ID to load from
