@@ -136,7 +136,7 @@ engDevFeeDrainage();
 	var feeAmount = 0;
 	if (feeExists('CD002', 'NEW') && calcValue > 100000) {
 		if (totalValCalUnits <= 5000)
-			feeAmount = 300;
+			feeAmount = 250;
 	}
 
 	if (feeExists('CD002', 'NEW') && calcValue > 100000) {
