@@ -1,4 +1,4 @@
-if (wfTask == 'Application Submitted' && wfStatus == 'Invoiced Fees') 
+if (wfTask == 'Application Submittal' && wfStatus == 'Invoiced Fees') 
 
 {
 	priAddrRec = priAddressOnCap();
