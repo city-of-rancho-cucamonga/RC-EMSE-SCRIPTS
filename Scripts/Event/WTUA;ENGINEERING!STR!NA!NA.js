@@ -23,11 +23,11 @@ if (wfTask == 'Closed' && wfStatus == 'Final')
 	email('Sid.Siphomsay@cityofrc.us', 'AA-NoReply@cityofrc.us', 'The Street Tree Removal and Replacement Application is closed on: ' + capIDString, 'The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
 }
 
-if (wfTask == 'PW Action' && wfStatus == 'Issued') {
+if (wfTask == 'PW Action' && wfStatus == 'Issued Permit') {
 	editAppSpecific('KEY DATES.Permit Issued', wfDateMMDDYYYY);
 }
 
-if (wfTask == 'PW Action' && wfStatus == 'Issued' && AInfo['Expire Date'] != undefined && AInfo['Expire Date'] != '') {
+if (wfTask == 'PW Action' && wfStatus == 'Issued Permit' && AInfo['Expire Date'] != undefined && AInfo['Expire Date'] != '') {
 	editAppSpecific('KEY DATES.Permit Expires', AInfo['Expire Date']);
 }
 
