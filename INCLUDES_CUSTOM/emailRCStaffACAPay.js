@@ -7,8 +7,8 @@ function emailRCStaffACAPay() {
 
 	// These are e-mail groups to simplify changes. If more than one e-mail, separate with comma
 	var emlFire = "AA.FireInspection@cityofrc.us";
-	var emlBldNoFCS = "sid.siphomsay@cityofrc.us,jennifer.quan@cityofrc.us,Pamela.Wilkerson@cityofrc.us,Francisco.Reynaga@cityofrc.us,Ricardo.Jacquez@cityofrc.us";
-	var emlBldFCS = "sid.siphomsay@cityofrc.us,jennifer.quan@cityofrc.us,Pamela.Wilkerson@cityofrc.us,Francisco.Reynaga@cityofrc.us,Ricardo.Jacquez@cityofrc.us";
+	var emlBldNoFCS = "sid.siphomsay@cityofrc.us,jennifer.quan@cityofrc.us,Paige.Garcia@cityofrc.us,edrnotification@cityofrc.us";
+	var emlBldFCS = "sid.siphomsay@cityofrc.us,jennifer.quan@cityofrc.us,Paige.Garcia@cityofrc.us,edrnotification@cityofrc.us";
 	var emlEngRLOP = "AA.Engineering@cityofrc.us"; // For Engineering records of type ROW, LCP, OLP, Plan Check
 	var emlEngCIP = "AA.Engineering@cityofrc.us"; // For Engineering records of type CIP
 	var emlEngEnvironment = "AA.EnvironmentalPrograms@cityofrc.us";
