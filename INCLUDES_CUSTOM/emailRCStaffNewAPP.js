@@ -26,9 +26,9 @@ function emailRCStaffNewAPP() {
 		return emlBldFCS;
 	} // Building FCS
 	// else if(appT1 == "Engineering" && (appT2 == "ROW" || appT2 == "LCP" || appT2 == "OLP" || appT2 == "Plan Check")){
-	else if (appT1 == "Engineering" && (appT2 == "ROW" || appT2 == "LCP" || appT2 == "OLP" || appT2 == "Plan Check" || appT2 == "Grading" || appT2 == "WQMP" || appT2 == "Onsite Sewer and Water")) {
+	else if (appT1 == "Engineering" && (appT2 == "ROW" || appT2 == "LCP" || appT2 == "OLP" || appT2 == "Plan Check" || appT2 == "Grading" || appT2 == "WQMP" || appT2 == "Onsite Sewer and Water" || appT2 == "STR")) {
 		return emlEngRLOP;
-	} // Engineering ROW, LCP, OLP, Plan Check
+	} // Engineering ROW, LCP, OLP, Plan Check, Online Sewer and Water, STR
 	else if (appT1 == "Engineering" && (appT2 == "CIP Permit" || appT2 == "CIP Design")) {
 		return emlEngCIP;
 	} // Engineering CIP
