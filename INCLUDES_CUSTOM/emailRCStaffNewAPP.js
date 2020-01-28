@@ -10,8 +10,8 @@ function emailRCStaffNewAPP() {
 	var emlBldNoFCS = "sid.siphomsay@cityofrc.us,";
 	var emlBldFCS = "sid.siphomsay@cityofrc.us";
 	// var emlEngRLOP = "AA.Engineering@cityofrc.us"; // For Engineering records of type ROW, LCP, OLP, Plan Check
-	var emlEngRLOP = "AA.EngineeringTech@cityofrc.us"; // For Engineering records of type ROW, LCP, OLP, Plan Check, PGR, WQMP, OSW
-	var emlEngCIP = "AA.Engineering@cityofrc.us"; // For Engineering records of type CIP
+	var emlEngRLOP = "AA.EngineeringTech@cityofrc.us,ssiphoms@cityofrc.us"; // For Engineering records of type ROW, LCP, OLP, Plan Check, PGR, WQMP, OSW
+	var emlEngCIP = "AA.Engineering@cityofrc.us,ssiphoms@cityofrc.us"; // For Engineering records of type CIP
 	var emlEngEnvironment = "AA.EnvironmentalPrograms@cityofrc.us";
 	var emlPlanning = "AA.Planning@cityofrc.us"
 		var emlIS = "sid.siphomsay@cityofrc.us";
