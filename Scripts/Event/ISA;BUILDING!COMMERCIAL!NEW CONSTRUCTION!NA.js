@@ -7,5 +7,5 @@ if (inspType == 'Temporary Power') {
 
 
 if (inspType == 'Drywall, Nailing, Interior Lath') {
-	email('sid.siphomsay@cityofrc.us', 'noreply@accela.com', 'Drywall, Nailing, Interior Lath inspection notification for ' + capIDString + '-' + priAddrRec, 'Drywall, Nailing, Interior Lath inspection has been scheduled for Record# ' + capIDString + '. Please respond accordingly');
+	email('sid.siphomsay@cityofrc.us,ssiphomsay@yahoo.com', 'noreply@accela.com', 'Drywall, Nailing, Interior Lath inspection notification for ' + capIDString + '', 'Drywall, Nailing, Interior Lath inspection has been scheduled for Record# ' + capIDString + '. Please respond accordingly');
 }
