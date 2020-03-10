@@ -6,8 +6,7 @@ if (inspType == 'Temporary Power') {
 }
 
 
-var inspStatus = aa.inspection.getInspectionStatus();
-if (inspType == 'Drywall, Nailing, Interior Lath' && inspStatus == 'Scheduled') {
+if (inspType == 'Final Inspection') {
 	priAddrRec = priAddressOnCap();
-	email('sid.siphomsay@cityofrc.us', 'noreply@accela.com', 'Dry wall Inspection at' + priAddrRec, 'Dry Wall Inspection has been scheduled for Record# ' + capIDString + ' at ' + priAddrRec +'. Please respond accordingly');
+	email('sid.siphomsay@cityofrc.us', 'noreply@accela.com', 'Final Inspection at' + priAddrRec, 'Final Inspection has been scheduled for Record# ' + capIDString + ' at ' + priAddrRec +'. Please respond accordingly');
 }
