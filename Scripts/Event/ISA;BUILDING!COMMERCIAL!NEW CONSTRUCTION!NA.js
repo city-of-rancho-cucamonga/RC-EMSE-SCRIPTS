@@ -5,3 +5,7 @@ if (inspType == 'Temporary Power') {
 	insertSubProcess('Gas Meter Release', 'BLD_NEWCONINSP_GASMTRREL', true);
 }
 
+if (inspType == 'Drywall, Nailing, Interior Lath') {
+	email('sid.siphomsay@cityofrc.us', 'noreply@accela.com', 'Notification for ' + capIDString + '', 'Dry Wall Inspection has been scheduled for Record# ' + capIDString + '. Please respond accordingly');
+}
+
