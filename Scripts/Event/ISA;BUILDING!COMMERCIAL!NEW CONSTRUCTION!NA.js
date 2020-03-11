@@ -4,3 +4,9 @@ if (inspType == 'Temporary Power') {
 	insertSubProcess('Utility Meter Release', 'BLD_NEWCONINSP_UTILITYMTRREL', true);
 	insertSubProcess('Gas Meter Release', 'BLD_NEWCONINSP_GASMTRREL', true);
 }
+
+
+if (inspType == 'Final Inspection') {
+	priAddrRec = priAddressOnCap();
+	email('landdevgis@cityofrc.us,sid.siphomsay@cityofrc.us', 'noreply@accela.com', 'Final Inspection at' + priAddrRec, 'Final Inspection has been scheduled for Record# ' + capIDString + ' at ' + priAddrRec +'. Please respond accordingly');
+}
