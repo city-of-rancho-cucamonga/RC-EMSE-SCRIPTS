@@ -1,7 +1,5 @@
-if (capStatus == 'Pre-Inspection' && !matches(insType, 'Pre-Inspection'))  
-	
-{
+if (!matches(inspType, 'Pre-Inspection')) {
 	cancel = true;
 	showMessage = true;
-	comment('The inspection cannot be scheduled because the permit does not have a record status which allows inspection scheduling');
+	comment('Final inspection cannot be scheduled after Transportaion Fees are paid.');
 }
