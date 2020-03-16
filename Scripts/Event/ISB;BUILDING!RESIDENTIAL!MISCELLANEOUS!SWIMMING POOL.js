@@ -6,11 +6,10 @@ if (!publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'Inspections'
 
 
 
-if (!matches(inspType, 'Underground') && capStatus == "Pre-Inspection") {
+if (!matches(inspType, 'Underground') && matches(capStatus, 'Pre-Inspection')) {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled after Transportaion Fees are paid.');
 }
-
 
 
