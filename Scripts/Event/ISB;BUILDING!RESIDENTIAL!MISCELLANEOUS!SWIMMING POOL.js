@@ -1,6 +1,4 @@
-//
-
-if (matches(capStatus,'Pre-Inspection') && !matches(insType, 'Pre-Inspection'))  
+if (capStatus == 'Pre-Inspection' && !matches(insType, 'Pre-Inspection'))  
 	
 {
 	cancel = true;
