@@ -1,4 +1,4 @@
-if (!matches(inspType, 'Pre-Inspection')) {
+if (!matches(inspType, 'Pre-Inspection') && capStatus == "Pre-Inspection") {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled after Transportaion Fees are paid.');
