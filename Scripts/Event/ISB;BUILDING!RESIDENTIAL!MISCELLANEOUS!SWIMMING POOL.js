@@ -5,11 +5,8 @@
 //	comment('The inspection cannot be scheduled because the permit does not have a record status which allows inspection scheduling');
 //}
 
-
-if (matches(inspType, 'Underground') && matches(capStatus, 'Pre-Inspection')) {
+if (matches(inspType, 'Excavation, Setbacks and Bonding (Pre-Gunnite)', 'Foundation, Footings, Setbacks', 'Masonry Steel, Rebar, Grout', 'Bond Beam', 'Bonding Grid (Pre-Deck)', 'Underground', 'Gas Line, Gas Test', 'Enclosure (Fence and Gates)', 'Rough Electrical', 'Final Inspection', 'Partial Inspection') && matches(capStatus, 'Pre-Inspection')) {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled after Transportaion Fees are paid.');
 }
-
-
