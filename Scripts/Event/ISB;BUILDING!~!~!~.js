@@ -29,6 +29,14 @@ if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 
 	comment('Final inspection cannot be scheduled at this time. Please call Planning to schedule a Planning Final inspection.');
 }
 
+
+if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'ADU Covenant', null)) {
+	cancel = true;
+	showMessage = true;
+	comment('Signed ADU COVENANT required before Final Inspection.');
+}
+
+
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied','No C of O - Engineering Impact Fees Due',null)) {
 	cancel = true;
 	showMessage = true;
