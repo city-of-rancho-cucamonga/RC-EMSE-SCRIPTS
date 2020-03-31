@@ -42,7 +42,7 @@ if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'ADU Covenant', null)) {
 	cancel = true;
 	showMessage = true;
-	comment('Signed ADU COVENANT required before Final Inspection.');
+	comment('Signed ADU Covenant required before Final Inspection. Please call Planning for additional information at 909-477-2750.');
 }
 
 // Condition "No C of O - Engineering Impact Fees Due"
