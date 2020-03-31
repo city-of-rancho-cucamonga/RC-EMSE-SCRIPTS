@@ -35,7 +35,7 @@ if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'Septic Required', null)) {
 	cancel = true;
 	showMessage = true;
-	comment('Final Septic inspection is required prior to building final inspection.');
+	comment('Final Septic Inspection is required prior to Building Final Inspection.');
 }
 
 // Condition "ADU Covenant"
