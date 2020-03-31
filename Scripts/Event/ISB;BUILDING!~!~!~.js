@@ -17,34 +17,42 @@ if (matches(inspType, 'Final Inspection', 'Final Electrical', 'Final Plumbing', 
 	comment('Unable to schedule inspection because there is a balance due of $ ' + balanceDue);
 }
 
+
 if (matches(inspType, 'Final Inspection', 'Final Mechanical', 'Final Electrical', 'Final Plumbing', 'Solar / Photovoltaic Final', 'Fire Occupancy Final', 'Final-Certificate of Occupancy', 'Pool, Spa Final', 'Final') && appHasCondition('Building Permit', 'Applied', 'Business License Sub List', null)) {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled at this time due to the fact that the Subcontractor List has not been submitted to the Business License Division for Business License verification.  All contractors and subcontractors are required to have a Business License.  The appropriate Subcontractor List form can be obtained at WWW.CITYOFRC.US/BANDSFORMS.  Once completed, please email the form to BUSINESSLICENSE@CITYOFRC.US for processing.  If you have any questions, please contact the Business License Division at (909) 919-2948.');
 }
 
+// Condition "Planning Final"
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'Planning Final', null)) {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled at this time. Please call Planning to schedule a Planning Final inspection.');
 }
 
+// Condition "Septic Required"
+if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'Septic Required', null)) {
+	cancel = true;
+	showMessage = true;
+	comment('Final inspection cannot be scheduled at this time. Please call Planning to schedule a Planning Final inspection.');
+}
 
+// Condition "ADU Covenant"
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'ADU Covenant', null)) {
 	cancel = true;
 	showMessage = true;
 	comment('Signed ADU COVENANT required before Final Inspection.');
 }
 
-
+// Condition "No C of O - Engineering Impact Fees Due"
 if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied','No C of O - Engineering Impact Fees Due',null)) {
 	cancel = true;
 	showMessage = true;
 	comment('Final inspection cannot be scheduled at this time. No C of O - Engineering Impact Fees Due.');
 }
 
-
-
+// Condition "OWTS As-Built"
 if (matches(inspType, 'Final Plumbing', 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'OWTS As-Built', null)) {
 	cancel = true;
 	showMessage = true;
