@@ -90,4 +90,13 @@ function bldElecFeeLookup() {
 				newEleTotal += ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] * 164;
 	}
 
+
+if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
+		for (xxx in ELECTRICALINFORMATIONTABLE)
+			if (ELECTRICALINFORMATIONTABLE[xxx]['Electrical Type'] == 'Electrical for alumawood patio cover/enclosure')
+				newEleTotal += ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] * 65;
+	}
+
+
+
 }
