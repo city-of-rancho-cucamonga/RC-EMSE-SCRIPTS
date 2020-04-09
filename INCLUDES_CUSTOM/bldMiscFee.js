@@ -673,6 +673,14 @@ function bldMiscFee() {
 					newMiscTotal += 2634;
 		}
 
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Trash enclosure up to 100 l.f.')
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 350;
+		}
+
+
+
 	}
 	//end replaced branch: BuildingMiscFee:Lookup;
 	if (newMisc100Total > 0) {
