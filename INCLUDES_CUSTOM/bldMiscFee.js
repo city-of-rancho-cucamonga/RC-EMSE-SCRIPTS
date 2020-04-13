@@ -466,26 +466,43 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 482;
+					newMisc100Total += 457;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 3500)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 3500) / 3500) * 262;
+				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 198;
 		}
+
+		// Rename this fee to "Residential Composition Roof"
+		//if (typeof(TYPESOFWORK) == 'object') {
+		//	for (xxx in TYPESOFWORK)
+		//		if (TYPESOFWORK[xxx]['Type'] == 'Re-roofing - Residential' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
+		//			newMisc100Total += 456;
+		//}
+
+		//if (typeof(TYPESOFWORK) == 'object') {
+		//	for (xxx in TYPESOFWORK)
+		//		if (TYPESOFWORK[xxx]['Type'] == 'Re-roofing - Residential' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 3500)
+		//			newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 3500) / 3500) * 184;
+		//}
+
+		
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
+					newMisc100Total += 276;
+		}
+
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Re-roofing - Residential' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 456;
+				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 133;
 		}
 
-		if (typeof(TYPESOFWORK) == 'object') {
-			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Re-roofing - Residential' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 3500)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 3500) / 3500) * 184;
-		}
+
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
@@ -673,11 +690,43 @@ function bldMiscFee() {
 					newMiscTotal += 2634;
 		}
 
+// add new created fees per Michael Frasure
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Trash enclosure up to 100 l.f.')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 350;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 356;
 		}
+
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Remodel')
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 457;
+		}
+
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Replaster')
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 360;
+		}
+
+
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
+					newMisc100Total += 332;
+		}
+
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 199;
+		}
+
+
+
+
+
+
 
 
 
