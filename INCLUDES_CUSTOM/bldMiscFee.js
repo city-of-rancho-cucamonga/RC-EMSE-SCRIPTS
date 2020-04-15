@@ -466,13 +466,13 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 457;
+					newMisc100Total += 454;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 198;
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
 		}
 
 		// Rename this fee to "Residential Composition Roof"
@@ -492,14 +492,14 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 276;
+					newMisc100Total += 259;
 		}
 
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 133;
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 130;
 		}
 
 
@@ -694,32 +694,32 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Trash enclosure up to 100 l.f.')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 356;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 347;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Remodel')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 457;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 445;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Replaster')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 360;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 350;
 		}
 
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 332;
+					newMisc100Total += 324;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 199;
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
 		}
 
 
