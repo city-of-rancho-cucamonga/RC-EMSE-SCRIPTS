@@ -462,18 +462,33 @@ function bldMiscFee() {
 				if (TYPESOFWORK[xxx]['Type'] == 'Gunite swimming pool/spa - residential')
 					newMiscTotal += 919;
 		}
+// RENAME to "Tile Lift and Re-lay Roof"
+		//if (typeof(TYPESOFWORK) == 'object') {
+		//	for (xxx in TYPESOFWORK)
+		//		if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
+		//			newMisc100Total += 454;
+		//}
 
-		if (typeof(TYPESOFWORK) == 'object') {
+	//	if (typeof(TYPESOFWORK) == 'object') {
+		//	for (xxx in TYPESOFWORK)
+		//		if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
+		//		newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
+	//	}
+
+	if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 454;
+				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
+					newMisc100Total += 380;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
+				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
+				newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 193;
 		}
+
+
+
 
 		// Rename this fee to "Residential Composition Roof"
 		//if (typeof(TYPESOFWORK) == 'object') {
@@ -721,6 +736,23 @@ function bldMiscFee() {
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
 					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
 		}
+
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
+					newMiscTotal += 262;
+		}
+			if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
+					newMiscTotal += 393;
+		}
+				if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 15
+					newMiscTotal += 524;
+		}
+
 
 
 
