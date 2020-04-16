@@ -739,18 +739,18 @@ function bldMiscFee() {
 
 
 
-		//if (typeof(TYPESOFWORK) == 'object') {
-		//	for (xxx in TYPESOFWORK)
-		//		if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
-		//			newMiscTotal += 262;
-		//}
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
+					newMiscTotal += 262;
+		}
 
 
-		//	if (typeof(TYPESOFWORK) == 'object') {
-		//	for (xxx in TYPESOFWORK)
-		//		if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
-		//			newMiscTotal += 393;
-		//}
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
+					newMiscTotal += 393;
+		}
 		
 		//		if (typeof(TYPESOFWORK) == 'object') {
 		//	for (xxx in TYPESOFWORK)
