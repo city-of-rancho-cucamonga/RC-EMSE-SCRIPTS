@@ -478,7 +478,7 @@ function bldMiscFee() {
 	if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 380;
+					newMisc100Total += 455;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
@@ -766,10 +766,30 @@ function bldMiscFee() {
 
 
 
+if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
+					newMiscTotal += 131;
+		}
 
 
-
-
+if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
+					newMiscTotal += 262;
+		}
+		
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 15 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 33)
+					newMiscTotal += 393;
+		}
+		
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 32 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 48)
+					newMiscTotal += 524;
+		}
 
 
 
