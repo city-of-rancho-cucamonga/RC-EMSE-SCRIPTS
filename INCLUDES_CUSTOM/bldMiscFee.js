@@ -757,6 +757,12 @@ function bldMiscFee() {
 				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 15 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 33)
 					newMiscTotal += 524;
 		}
+		
+		if (typeof(TYPESOFWORK) == 'object') {
+			for (xxx in TYPESOFWORK)
+				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 32 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 48)
+					newMiscTotal += 655;
+		}
 
 
 
