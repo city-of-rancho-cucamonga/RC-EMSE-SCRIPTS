@@ -90,11 +90,11 @@ function bldElecFeeLookup() {
 				newEleTotal += ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] * 164;
 	}
 
-
+// New Fee added per Fee Resolution update: Approved Feb 19, 2020
 if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
 		for (xxx in ELECTRICALINFORMATIONTABLE)
 			if (ELECTRICALINFORMATIONTABLE[xxx]['Electrical Type'] == 'Electrical for alumawood patio cover/enclosure')
-				newEleTotal += ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] * 65;
+				newEleTotal += ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] * 63.31;
 	}
 
 
