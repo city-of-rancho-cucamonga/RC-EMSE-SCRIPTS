@@ -11,7 +11,7 @@ function bldMechFeeLookup() {
 // MODIFY HVAC
 if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
-			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential') && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0
 				newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 262.00;
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
