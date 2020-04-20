@@ -11,7 +11,7 @@ function bldMechFeeLookup() {
 // MODIFY HVAC
 if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 			for (xxx in MECHANICALINFORMATIONTABLE)
-				if (MECHANICALINFORMATIONTABLE[xxx]['Type'] == 'HVAC System - Residential' && (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] * 1) > 0)
+				if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential' && (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] * 1) > 0)
 					newMiscTotal += 262;
 	}
 
