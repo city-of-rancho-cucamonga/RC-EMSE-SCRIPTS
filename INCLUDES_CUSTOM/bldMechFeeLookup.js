@@ -51,11 +51,11 @@ function bldMechFeeLookup() {
 	}
 
 	//Modify fees
-	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
-		//for (xxx in MECHANICALINFORMATIONTABLE)
-		//	if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential')
-		//		newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 197.00;
-		//comment('What is newMecTotal = ' + newMecTotal);
+	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+		for (xxx in MECHANICALINFORMATIONTABLE)
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential')
+				newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 197.00;
+		comment('What is newMecTotal = ' + newMecTotal);
 
 	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		//for (xxx in MECHANICALINFORMATIONTABLE)
