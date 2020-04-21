@@ -56,6 +56,7 @@ function bldMechFeeLookup() {
 	//		if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential')
 	//			newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 197.00;
 	//	comment('What is newMecTotal = ' + newMecTotal);
+	//}
 
 	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		//for (xxx in MECHANICALINFORMATIONTABLE)
@@ -74,7 +75,6 @@ function bldMechFeeLookup() {
 
 
 
-	}
 
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
