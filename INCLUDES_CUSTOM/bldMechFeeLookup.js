@@ -64,12 +64,12 @@ function bldMechFeeLookup() {
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
 
-	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
-		for (xxx in MECHANICALINFORMATIONTABLE)
-			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 1)
-				newMecTotal += (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] - 1) * 51;
-		comment('What is newMecTotal = ' + newMecTotal);
-	}
+	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+		//for (xxx in MECHANICALINFORMATIONTABLE)
+		//	if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 1)
+		//		newMecTotal += (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] - 1) * 51;
+		//comment('What is newMecTotal = ' + newMecTotal);
+	//}
 
 
 
