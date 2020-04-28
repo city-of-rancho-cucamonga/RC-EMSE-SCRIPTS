@@ -478,13 +478,13 @@ function bldMiscFee() {
 	if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 455;
+					newMisc100Total += 454;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Tile Lift and Re-lay Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-				newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 193;
+				newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 188.96;
 		}
 
 
@@ -507,14 +507,14 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 259;
+					newMisc100Total += 259.08;
 		}
 
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Composition Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 130;
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 130.52;
 		}
 
 
@@ -709,32 +709,32 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Trash enclosure up to 100 l.f.')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 347;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 347.23;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Remodel')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 445;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 445.12;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Swimming pool Replaster')
-					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 350;
+					newMiscTotal += (TYPESOFWORK[xxx]['Quantity'] * 1) * 346.74;
 		}
 
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 0)
-					newMisc100Total += 324;
+					newMisc100Total += 323.85;
 		}
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Residential Tile Roof' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 2000)
-					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 194;
+					newMisc100Total += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 2000) / 1000) * 193.34;
 		}
 
 
@@ -742,26 +742,26 @@ function bldMiscFee() {
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
-					newMiscTotal += 262;
+					newMiscTotal += 259.08;
 		}
 
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
-					newMiscTotal += 393;
+					newMiscTotal += 389.60;
 		}
 		
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 15 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 33)
-					newMiscTotal += 524;
+					newMiscTotal += 497.74;
 		}
 		
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'New construction windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 32 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 48)
-					newMiscTotal += 655;
+					newMiscTotal += 627.28;
 		}
 
 
@@ -769,26 +769,26 @@ function bldMiscFee() {
 if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 0 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 6)
-					newMiscTotal += 131;
+					newMiscTotal += 129.54;
 		}
 
 
 if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 5 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 16)
-					newMiscTotal += 262;
+					newMiscTotal += 259.08;
 		}
 		
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 15 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 33)
-					newMiscTotal += 393;
+					newMiscTotal += 389.60;
 		}
 		
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
 				if (TYPESOFWORK[xxx]['Type'] == 'Retrofit windows' && (TYPESOFWORK[xxx]['Quantity'] * 1) > 32 && (TYPESOFWORK[xxx]['Quantity'] * 1) < 48)
-					newMiscTotal += 524;
+					newMiscTotal += 519.14;
 		}
 
 
