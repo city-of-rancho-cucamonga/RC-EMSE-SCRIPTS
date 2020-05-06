@@ -36,9 +36,8 @@ function bldNoPlanFee() {
 				if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)'
 				//if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0 && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) < 2)
 				//newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
-					newNPTotal += (MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 51.00 + 262;
-		}	
-				//comment('What is newNPTotal = ' + newNPTotal);
+					newNPTotal += ((MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 51.00) + 262;
+					//comment('What is newNPTotal = ' + newNPTotal);
 		}
 
 		//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
