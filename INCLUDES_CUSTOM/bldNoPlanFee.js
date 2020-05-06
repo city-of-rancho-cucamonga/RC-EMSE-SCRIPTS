@@ -40,7 +40,7 @@ function bldNoPlanFee() {
 		if (typeof(MECHANICALINFORMATION) == 'object') {
 			for (xxx in MECHANICALINFORMATION)
 				if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)')
-					newNPTotal += (MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 262.00;
+					newNPTotal += ((MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 51.00) + 262;
 		}
 
 
