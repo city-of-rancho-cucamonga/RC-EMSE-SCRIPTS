@@ -33,7 +33,7 @@ function bldNoPlanFee() {
 		//Modified from above  (NOT WORKING YET)
 		if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 			for (xxx in MECHANICALINFORMATIONTABLE)
-				if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) = 1)
+				if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) == 1)
 					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
 
 		//comment('What is newNPTotal = ' + newNPTotal);
