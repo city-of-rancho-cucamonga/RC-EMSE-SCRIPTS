@@ -11,7 +11,7 @@ function bldPlumbingFeeNoSplit() {
 
 	if (newPlbTotal > 0) {
 		removeFee('PLMRESPLN', 'FINAL');
-		updateFee('PLMRESINSP', 'BLD_PLM_RES', 'FINAL', newPlbTotal*1.026 / .5, 'N');
+		updateFee('PLMRESINSP', 'BLD_PLM_RES', 'FINAL', newPlbTotal*1.026*1.029 / .5, 'N');
 	}
 
 	if (!(feeExists('MI115') || feeExists('MI006'))) {
