@@ -141,8 +141,8 @@ function fcsFeeMisc() {
 	// 	}
 
 	if (newFCSMiscTotal > 0) {
-		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal*1.026, 'N');
-		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal*1.026, 'N');
+		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal*1.026*1.029, 'N');
+		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal*1.026*1.029, 'N');
 		updateFee('FCS050', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal, 'N');
 		updateFee('FCS055', 'FCS_STANDARD', 'FINAL', newFCSMiscTotal, 'N');
 	}
