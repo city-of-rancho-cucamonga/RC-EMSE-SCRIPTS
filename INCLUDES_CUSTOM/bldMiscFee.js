@@ -676,12 +676,12 @@ function bldMiscFee() {
 	}
 	//end replaced branch: BuildingMiscFee:Lookup;
 	if (newMisc100Total > 0) {
-		updateFee('MI001', 'BLD_MISC', 'FINAL', newMisc100Total*1.026, 'N');
+		updateFee('MI001', 'BLD_MISC', 'FINAL', newMisc100Total*1.026*1.029, 'N');
 	}
 
 	if (newMiscTotal > 0) {
-		updateFee('MI001', 'BLD_MISC', 'FINAL', (newMiscTotal*1.026 * .50) + newMisc100Total, 'N');
-		updateFee('MI001.01', 'BLD_MISC', 'FINAL', newMiscTotal*1.026 * .50, 'N');
+		updateFee('MI001', 'BLD_MISC', 'FINAL', (newMiscTotal*1.026 *1.029* .50) + newMisc100Total, 'N');
+		updateFee('MI001.01', 'BLD_MISC', 'FINAL', newMiscTotal*1.026*1.029* .50, 'N');
 		updateFee('MI115', 'BLD_MISC', 'FINAL', newMiscTotal + newMisc100Total, 'N');
 		updateFee('MI006', 'BLD_MISC', 'FINAL', newMiscTotal + newMisc100Total, 'N');
 	}
