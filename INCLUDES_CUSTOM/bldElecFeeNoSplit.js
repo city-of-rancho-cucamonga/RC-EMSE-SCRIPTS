@@ -11,7 +11,7 @@ function bldElecFeeNoSplit() {
 
 	if (newEleTotal > 0) {
 		removeFee('ELERESPLN', 'FINAL');
-		updateFee('ELERESINSP', 'BLD_ELE_RES', 'FINAL', newEleTotal*1.026 / .5, 'N');
+		updateFee('ELERESINSP', 'BLD_ELE_RES', 'FINAL', newEleTotal*1.026*1.029 / .5, 'N');
 		comment('what is newEleTotal = ' + newEleTotal);
 		comment('This is a no split-the formula divided by .5 because Fee Schedule multiplied by .5');
 	}
