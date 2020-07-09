@@ -15,5 +15,5 @@ if (wfTask == 'Review Consolidation' && wfStatus == 'Incomplete') {
 }
 
 if (wfTask == 'Appeal' && wfStatus == 'Not Appealed') {
-	email('sid.siphomsay@cityofrc.us,dat.tran@cityofrc.us,robert.ball@cityofrc.us', 'noreply@cityofrc.us', 'Conditional Use Permit Record# ' + capIDString + ' has been approved.', 'Please review the case for any outstanding Condition of Approval. Please contact case planner ' + capDetail.getAsgnStaff() + ' for any question.');
+	email('sid.siphomsay@cityofrc.us,dat.tran@cityofrc.us,robert.ball@cityofrc.us', 'noreply@accela.com', 'Conditional Use Permit Record# ' + capIDString + ' has been approved.', 'Please review the case for any outstanding Condition of Approval. Please contact case planner ' + capDetail.getAsgnStaff() + ' for any question.');
 }
