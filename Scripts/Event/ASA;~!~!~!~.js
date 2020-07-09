@@ -59,7 +59,7 @@ var rcInitiatedBy = cap.getInitiatedProduct();
 logDebug('This cap was initiated by ' + rcInitiatedBy);
 if (!parcelGIS && !publicUser && priAddrRec != false && !(appMatch('Planning/Misc/Business License Review/NA')) && rcInitiatedBy != 'CodeOfficer' && rcInitiatedBy != 'AMO' && rcInitiatedBy != 'GOVXML_CLIENT') {
 	addStdCondition('APO Condition', 'New Address');
-	email('Sid.Siphomsay@cityofrc.us, jennifer.quan@cityofrc.us', 'noreply@cityofrc.us', 'New Address has been entered on record number ' + capIDString + ' - ' + priAddrRec, 'No address found in database for address ' + priAddrRec + ' on record # ' + capIDString + '. Please research and update as needed. The last update was performed by ' + currentUserID + '.');
+	email('Sid.Siphomsay@cityofrc.us, jennifer.quan@cityofrc.us', 'noreply@accela.com', 'New Address has been entered on record number ' + capIDString + ' - ' + priAddrRec, 'No address found in database for address ' + priAddrRec + ' on record # ' + capIDString + '. Please research and update as needed. The last update was performed by ' + currentUserID + '.');
 }
 
 if (cap.isCreatedByACA()) {
