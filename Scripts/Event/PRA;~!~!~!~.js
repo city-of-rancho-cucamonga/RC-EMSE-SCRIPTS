@@ -1,6 +1,6 @@
 
 if (publicUser == true) {
-	email(emailRCStaffACAPay(), 'acapay-noreply@cityofrc.us', 'PAYMENT RECEIVED - A payment was submitted via Accelerate: ' + capIDString, 'A payment was submitted on a(an) ' + cap.getCapType().getAlias() + ' application (' + capIDString + ') via Accelerate. Please review it and proceed as appropriate.');
+	email(emailRCStaffACAPay(), 'acapay-noreply@accela.com', 'PAYMENT RECEIVED - A payment was submitted via Accelerate: ' + capIDString, 'A payment was submitted on a(an) ' + cap.getCapType().getAlias() + ' application (' + capIDString + ') via Accelerate. Please review it and proceed as appropriate.');
 }
 
 // DISABLED: PaymentReceiveAfter:09
