@@ -4,7 +4,7 @@
 // 	}
 
 if (!appMatch('Planning/Subdivision/Tentative Tract Map/New') && !appMatch('Planning/Subdivision/Tentative Parcel Map/New')) {
-	email(emailRCStaffNewAPP(), 'noreply@cityofrc.us', cap.getCapType().getAlias().toUpperCase() + ' - a new application was submitted via Accelerate: ' + capIDString, 'A(n) ' + cap.getCapType().getAlias() + ' application (' + capIDString + ') was submitted via Accelerate. Please review it and proceed as appropriate.');
+	email(emailRCStaffNewAPP(), 'noreply@accela.com', cap.getCapType().getAlias().toUpperCase() + ' - a new application was submitted via the Online Permit Center portal: ' + capIDString, 'A(n) ' + cap.getCapType().getAlias() + ' application (' + capIDString + ') was submitted via Accelerate. Please review it and proceed as appropriate.');
 }
 
 if (!appMatch('Building/Residential/NP/NA') && !appMatch('Planning/Subdivision/Tentative Tract Map/New') && !appMatch('Planning/Subdivision/Tentative Parcel Map/New')) {
@@ -28,7 +28,7 @@ if (!appMatch('Building/Residential/NP/NA') && !appMatch('Planning/Subdivision/T
 				getContactParams4Notification(params, tContact);
 				logDebug('Contact: ' + tContact['businessName'] + ' ' + tContact['email']);
 				if (!matches(tContact['email'], null, '', undefined)) {
-					sendNotification('noreply@cityofrc.us', tContact['email'], '', notificationTemplate, params, new Array());
+					sendNotification('noreply@accela.com', tContact['email'], '', notificationTemplate, params, new Array());
 				}
 
 			}
