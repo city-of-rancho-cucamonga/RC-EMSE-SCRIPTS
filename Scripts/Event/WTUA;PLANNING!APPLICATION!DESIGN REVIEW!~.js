@@ -21,7 +21,7 @@ if (matches(wfTask, 'Public Notification') && AInfo['Hearing Date'] != null && A
 		myCapType = cap.getCapType();
 	else
 		myCapType = cap.getCapType().getAlias();
-	email('jennifer.nakamura@cityofrc.us, jose.ramirez@cityofrc.us', 'noreply@cityofrc.us', 'Record # ' + capIDString + ' has been docketed', 'Record # ' + capIDString + ' has been docketed to the ' + AInfo['Hearing Date'] + ' agenda:' + '<br /><br />Hearing Body: ' + AInfo['Hearing Body'] + '<br />Hearing Type: ' + AInfo['Hearing Type'] + '<br />Assigned User: ' + rcUserAssigned + '<br />Application Type: ' + myCapType + '<br /><br />Please review the record and respond as appropriate.');
+	email('jennifer.nakamura@cityofrc.us, jose.ramirez@cityofrc.us', 'noreply@accela.com', 'Record # ' + capIDString + ' has been docketed', 'Record # ' + capIDString + ' has been docketed to the ' + AInfo['Hearing Date'] + ' agenda:' + '<br /><br />Hearing Body: ' + AInfo['Hearing Body'] + '<br />Hearing Type: ' + AInfo['Hearing Type'] + '<br />Assigned User: ' + rcUserAssigned + '<br />Application Type: ' + myCapType + '<br /><br />Please review the record and respond as appropriate.');
 }
 
 if (wfTask == 'Committee Report Preparedness' && matches(wfStatus, 'Docket for Committees', 'Complete')) {
