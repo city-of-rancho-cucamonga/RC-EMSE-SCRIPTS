@@ -38,7 +38,7 @@ if (wfTask == 'Closed' && wfStatus == 'Final')
 if (wfTask == 'Closed' && wfStatus == 'Final') 
 {
 	editAppSpecific('KEY DATES.Final', wfDateMMDDYYYY);
-	email('Sid.Siphomsay@cityofrc.us', 'AA-NoReply@cityofrc.us', 'The Street Tree Removal and Replacement Application is closed on: ' + capIDString, 'The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
+	email('Sid.Siphomsay@cityofrc.us', 'AA-NoReply@accela.com', 'The Street Tree Removal and Replacement Application is closed on: ' + capIDString, 'The primary address on this permit is ' + priAddrRec + '. Please review it and respond accordingly.');
 }
 
 
