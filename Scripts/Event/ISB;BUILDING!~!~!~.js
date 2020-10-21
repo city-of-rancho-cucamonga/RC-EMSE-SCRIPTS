@@ -56,7 +56,7 @@ if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 
 if (matches(inspType, 'Final Plumbing', 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'OWTS As-Built', null)) {
 	cancel = true;
 	showMessage = true;
-	comment('A final inspection cannot be scheduled at this time. GǣAs-builtsGǥ must be submitted to the Building and Safety Services Department by the contractor prior to scheduling the final inspection.');
+	comment('A final inspection cannot be scheduled at this time. As-builts must be submitted to the Building and Safety Services Department by the contractor prior to scheduling the final inspection.');
 }
 
 if (matches(inspType, 'Final Inspection', 'Final Mechanical', 'Final Electrical', 'Final Plumbing', 'Solar / Photovoltaic Final', 'Fire Occupancy Final', 'Final-Certificate of Occupancy', 'Pool, Spa Final', 'Final') && appHasCondition('Building Permit', 'Applied', 'Transportation Diff Fee', null)) {
