@@ -1,15 +1,31 @@
+/* original
+if (!publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') 
+&& !(matches(appTypeArray[1], 'Grading', 'Code Violation') || matches(appTypeArray[2], 'Septic'))) {
+	cancel = true;
+	showMessage = true;
+	comment('The inspection cannot be scheduled because the permit does not have a record status which allows inspection scheduling');
+} 
+*/
 
-if (!publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') && !(matches(appTypeArray[1], 'Grading', 'Code Violation') || matches(appTypeArray[2], 'Septic'))) {
+if (!publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') 
+	&& !(matches(appTypeArray[1], 'Grading', 'Code Violation')))
+
+	{
 	cancel = true;
 	showMessage = true;
 	comment('The inspection cannot be scheduled because the permit does not have a record status which allows inspection scheduling');
 }
 
-if (publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') && !(matches(appTypeArray[1], 'Grading', 'Code Violation') || matches(appTypeArray[2], 'Septic'))) {
+
+
+
+if (publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') 
+	&& !(matches(appTypeArray[1], 'Grading', 'Code Violation') || matches(appTypeArray[2], 'Septic'))) {
 	cancel = true;
 	showMessage = true;
 	comment('The inspection cannot be scheduled until fees are paid and a permit is issued. Please contact City staff to discuss your permit application at (909) 477-2700.');
 }
+
 
 if (matches(inspType, 'Final Inspection', 'Final Electrical', 'Final Plumbing', 'Final Mechanical', 'Pool, Spa Final', 'Final', 'Solar / Photovoltaic Final') && balanceDue > 0) {
 	cancel = true;
