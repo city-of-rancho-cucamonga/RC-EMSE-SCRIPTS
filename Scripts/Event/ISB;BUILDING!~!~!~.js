@@ -20,7 +20,7 @@ if (!publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued',
 
 
 if (publicUser && !matches(capStatus, 'Pre-Inspection', 'Issued', 'TCO Issued', 'As-Built Required', 'Approved', 'Inspections', 'Inspection Phase') 
-	&& !(matches(appTypeArray[1], 'Grading', 'Code Violation') || matches(appTypeArray[2], 'Septic'))) {
+	&& !(matches(appTypeArray[1], 'Grading', 'Code Violation'))) {
 	cancel = true;
 	showMessage = true;
 	comment('The inspection cannot be scheduled until fees are paid and a permit is issued. Please contact City staff to discuss your permit application at (909) 477-2700.');
