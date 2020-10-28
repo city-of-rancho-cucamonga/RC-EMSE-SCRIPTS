@@ -81,6 +81,13 @@ if (matches(inspType, 'Final Inspection', 'Final Mechanical', 'Final Electrical'
 	comment('Final inspection cannot be scheduled after Transportaion Fees are paid.');
 }
 
+// Condition "Building Final Hold"
+if (matches(inspType, 'Final Inspection') && appHasCondition('Building Permit', 'Applied', 'Building Final Hold', null)) {
+	cancel = true;
+	showMessage = true;
+	comment('Your project must be cleared by the Building Department before a final inspection can be scheduled. Please contact Building and Safety at (909) 477-2710 to speak with staff.');
+}
+
 var childRecStatus;
 childIdREV = 'undefined';
 childIdREV = childGetByCapType('Building/Revision/NA/NA');
