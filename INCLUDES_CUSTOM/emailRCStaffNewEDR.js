@@ -19,7 +19,7 @@ function emailRCStaffNewEDR() {
 	else if (appT1 == "Building" && appT2 == "FCS") {
 		return emlBldFCS;
 	} // Building FCS
-	else if (appT1 == "Engineering" && (appT2 == "Plan Check" || appT2 == "LCP" || appT2 == "ROW" || appT2 == "OLP")) {
+	else if (appT1 == "Engineering" && (appT2 == "Plan Check" || appT2 == "LCP" || appT2 == "ROW" || appT2 == "WQMP" || appT2 == "PGR" || appT2 == "OSW" || appT2 == "OLP")) {
 		return emlEngPC;
 	} // Engineering Plan Check
 	else if (appT1 == "Engineering" && (appT2 == "CIP Permit" || appT2 == "CIP Design")) {
