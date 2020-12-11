@@ -6,12 +6,12 @@ function emailRCStaffNewEDR() {
 	var appT2 = appCapTypeArr[1];
 
 	// These are e-mail groups to simplify changes. If more than one e-mail, separate with comma
-	var emlBldNoFCS = "sid.siphomsay@cityofrc.us,edrnotification@cityofrc.us";
-	var emlBldFCS = "sid.siphomsay@cityofrc.us,edrnotification@cityofrc.us";
-	var emlEngPC = "AA.EngineeringPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc"; // For Engineering records of type ROW, LCP, OLP, Plan Check
-	var emlEngCIP = "AA.EngineeringPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc"; // For Engineering records of type CIP
-	var emlPlanning = "AA.PlanningPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc.us";
-	var emlIS = "sid.siphomsay@cityofrc.us";
+	var emlBldNoFCS = "sid.siphomsay@cityofrc.us,edrnotification@cityofrc.us,kyle.wingson@cityofrc.us";
+	var emlBldFCS = "sid.siphomsay@cityofrc.us,edrnotification@cityofrc.us,kyle.wingson@cityofrc.us";
+	var emlEngPC = "AA.EngineeringPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc,kyle.wingson@cityofrc.us"; // For Engineering records of type ROW, LCP, OLP, Plan Check
+	var emlEngCIP = "AA.EngineeringPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc,kyle.wingson@cityofrc.us"; // For Engineering records of type CIP
+	var emlPlanning = "AA.PlanningPlansCoordinator@cityofrc.us,sid.siphomsay@cityofrc.us,kyle.wingson@cityofrc.us";
+	var emlIS = "sid.siphomsay@cityofrc.us,kyle.wingson@cityofrc.us";
 
 	if (appT1 == "Building" && appT2 != "FCS") {
 		return emlBldNoFCS;
