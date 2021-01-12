@@ -49,6 +49,7 @@ if (!appMatch('Building/Grading/*/*') && wfTask == 'Application Submittal' && ma
 // }
 
 if (wfTask == 'Application Submittal' && matches(wfStatus, 'Resubmitted', 'Revisions')) {
+	console.log(nextWorkDay);
 	editTaskDueDate('Engineering Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('Public Works Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('FCS Review', dateAdd(null, 5, 'Y'));
