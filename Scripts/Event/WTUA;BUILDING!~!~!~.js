@@ -49,13 +49,13 @@ if (!appMatch('Building/Grading/*/*') && wfTask == 'Application Submittal' && ma
 // }
 
 if (wfTask == 'Application Submittal' && matches(wfStatus, 'Resubmitted', 'Revisions')) {
-	console.log(nextWorkDay);
+	console.log(nextWorkDay());
 	editTaskDueDate('Engineering Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('Public Works Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('FCS Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('Planning Review', dateAdd(null, 5, 'Y'));
 	editTaskDueDate('MEP Review', dateAdd(null, 5, 'Y'));
-	editTaskDueDate('Building Review', dateAdd(nextWorkDay(), 5, 'Y'));
+	editTaskDueDate('Building Review', dateAdd(nextWorkDay, 5, 'Y'));
 	editTaskDueDate('Grading Review', dateAdd(null, 5, 'Y'));
 }
 
