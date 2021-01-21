@@ -114,6 +114,12 @@ function bldPlumbingFeeLookup() {
 				newPlbTotal += (PLUMBINGINFORMATIONTABLE[xxx]['Quantity'] * 1) * 131.00;
 	}
 
+	if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
+		for (xxx in PLUMBINGINFORMATIONTABLE)
+			if (PLUMBINGINFORMATIONTABLE[xxx]['Plumbing Type'] == 'Septic System Abandonment')
+				newPlbTotal += (PLUMBINGINFORMATIONTABLE[xxx]['Quantity'] * 1) * 277.00;
+	}
+
 	// DISABLED: BuildingPlumbingFee:Lookup:z01
 	// if (typeof(PLUMBINGINFORMATIONTABLE) == 'object') {
 	// 	newPlmBackPrevent = 0;
