@@ -41,12 +41,27 @@ function bldMechFeeLookup() {
 
 
 
+	// if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+	// 	for (xxx in MECHANICALINFORMATIONTABLE)
+	// 		if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Exhaust Hood, Vent Fan, Vent System, Heating Unit, Compressor, or Evaporative cooler - Res/Com')
+	// 			newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 250.00;
+	// 	comment('What is newMecTotal = ' + newMecTotal);
+	// }
+
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
-			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Exhaust Hood, Vent Fan, Vent System, Heating Unit, Compressor, or Evaporative cooler - Res/Com')
-				newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 250.00;
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Exhaust Hood, Vent Fan, Vent System, Heating Unit, Compressor, or Evaporative cooler - Res/Com' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0)
+				newMecTotal += 197.00;
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
+
+	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+		for (xxx in MECHANICALINFORMATIONTABLE)
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Exhaust Hood, Vent Fan, Vent System, Heating Unit, Compressor, or Evaporative cooler - Res/Com' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 1)
+				newMecTotal += (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] - 1) * 49.67;
+		comment('What is newMecTotal = ' + newMecTotal);
+	}
+
 
 	//Modify fees
 	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
