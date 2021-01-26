@@ -1,11 +1,45 @@
 function bldMechFeeLookup() {
 
+//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+	//	for (xxx in MECHANICALINFORMATIONTABLE)
+		//	if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential')
+				//newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 262.00;
+		//comment('What is newMecTotal = ' + newMecTotal);
+	//}
+
+
+// MODIFY HVAC
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
-			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential')
-				newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 262.00;
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0)
+				newMecTotal += 262.00;
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
+
+	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+		for (xxx in MECHANICALINFORMATIONTABLE)
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'HVAC System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 1)
+				newMecTotal += (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] - 1) * 49.67;
+		comment('What is newMecTotal = ' + newMecTotal);
+	}
+
+
+
+
+	//if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
+	//	for (xxx in ELECTRICALINFORMATIONTABLE)
+	//		if (ELECTRICALINFORMATIONTABLE[xxx]['Electrical Type'] == 'Receptacle, switch, lighting fixtures' && ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] > 0)
+	//			newEleTotal += 197;
+	//}
+
+	//if (typeof(ELECTRICALINFORMATIONTABLE) == 'object') {
+	//	for (xxx in ELECTRICALINFORMATIONTABLE)
+	//		if (ELECTRICALINFORMATIONTABLE[xxx]['Electrical Type'] == 'Receptacle, switch, lighting fixtures' && ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] > 10)
+	//			newEleTotal += (ELECTRICALINFORMATIONTABLE[xxx]['Quantity'] - 10) * 33;
+
+
+
+
 
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
@@ -14,12 +48,31 @@ function bldMechFeeLookup() {
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
 
+	//Modify fees
+	//if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+	//	for (xxx in MECHANICALINFORMATIONTABLE)
+	//		if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential')
+	//			newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 197.00;
+	//	comment('What is newMecTotal = ' + newMecTotal);
+	//}
+
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
-			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential')
-				newMecTotal += Math.ceil(parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity'])) * 197.00;
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 0)
+				newMecTotal += 197.00;
 		comment('What is newMecTotal = ' + newMecTotal);
 	}
+
+	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
+		for (xxx in MECHANICALINFORMATIONTABLE)
+			if (MECHANICALINFORMATIONTABLE[xxx]['Mechanical Type'] == 'Package Unit or Split System - Residential' && parseFloat(MECHANICALINFORMATIONTABLE[xxx]['Quantity']) > 1)
+				newMecTotal += (MECHANICALINFORMATIONTABLE[xxx]['Quantity'] - 1) * 49.67;
+		comment('What is newMecTotal = ' + newMecTotal);
+	}
+
+
+
+
 
 	if (typeof(MECHANICALINFORMATIONTABLE) == 'object') {
 		for (xxx in MECHANICALINFORMATIONTABLE)
