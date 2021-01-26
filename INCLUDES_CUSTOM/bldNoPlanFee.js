@@ -1,3 +1,4 @@
+//bldNoPlanFee.js
 function bldNoPlanFee() {
 
 	newNPTotal = 0;
@@ -22,11 +23,30 @@ function bldNoPlanFee() {
 					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 131.00;
 		}
 
+		
+		//Need to modify
+		//if (typeof(MECHANICALINFORMATION) == 'object') {
+			//for (xxx in MECHANICALINFORMATION)
+				//if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)')
+					//newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
+		//}
+
+		//Modified from above  (NOT WORKING YET)
+			//if (typeof(MECHANICALINFORMATION) == 'object') {
+			//for (xxx in MECHANICALINFORMATION)
+				//if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)')
+					//newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
+		//}
+
 		if (typeof(MECHANICALINFORMATION) == 'object') {
 			for (xxx in MECHANICALINFORMATION)
 				if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'HVAC W/Ductwork (Replacement Only/Same Location)')
-					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 262.00;
+					newNPTotal += ((MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 51.00) + 262;
 		}
+
+
+
+
 		
 		if (typeof(MECHANICALINFORMATION) == 'object') {
 			for (xxx in MECHANICALINFORMATION)
