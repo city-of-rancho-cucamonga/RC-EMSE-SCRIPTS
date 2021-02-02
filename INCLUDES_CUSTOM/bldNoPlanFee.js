@@ -1,3 +1,4 @@
+//bldNoPlanFee.js
 function bldNoPlanFee() {
 
 	newNPTotal = 0;
@@ -10,11 +11,18 @@ function bldNoPlanFee() {
 					newNPTotal += ELECTRICALINFORMATION[xxx]['Quantity'] * 262.00;
 		}
 
+		// if (typeof(MECHANICALINFORMATION) == 'object') {
+		// 	for (xxx in MECHANICALINFORMATION)
+		// 		if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'Heating Unit, Compressor, Evaporative Cooler')
+		// 			newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 250.00;
+		// }
+
 		if (typeof(MECHANICALINFORMATION) == 'object') {
 			for (xxx in MECHANICALINFORMATION)
 				if (MECHANICALINFORMATION[xxx]['Mechanical Type'] == 'Heating Unit, Compressor, Evaporative Cooler')
-					newNPTotal += MECHANICALINFORMATION[xxx]['Quantity'] * 250.00;
+					newNPTotal += ((MECHANICALINFORMATION[xxx]['Quantity'] - 1) * 51.00) + 197;
 		}
+
 
 		if (typeof(MECHANICALINFORMATION) == 'object') {
 			for (xxx in MECHANICALINFORMATION)
