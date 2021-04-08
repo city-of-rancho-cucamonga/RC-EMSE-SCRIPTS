@@ -7,7 +7,7 @@ useAppSpecificGroupName = true;
 loadAppSpecific(AInfo); 
 eval(getScriptText("INCLUDES_CSLB"));
 
-if (matches(currentUserID,'JSCHOMP','SID.SIPHOMSAY','MICHELLE.FERNANDES','KYLE.WINGSON','LIZA.TUNURI')) {
+if (matches(currentUserID,'SID.SIPHOMSAY','JENNIFER.QUAN','MICHELLE.FERNANDES','KYLE.WINGSON','LIZA.TUNURI')) {
 	showDebug = true;
 	}
 
