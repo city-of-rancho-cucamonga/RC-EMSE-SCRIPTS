@@ -5,7 +5,7 @@ useAppSpecificGroupName = true;
 // load ASI again using group name for backward compatibility.   Have to put this
 // in custom area since we can't edit the new INCLUDES_ACCELA_GLOBALS
 loadAppSpecific(AInfo); 
-
+eval(getScriptText("INCLUDES_CSLB"));
 if (matches(currentUserID,'SID.SIPHOMSAY','KYLE.WINGSON','MICHELLE.FERNANDES','LIZA.TUNURI')) {
 	showDebug = true;
 	}
