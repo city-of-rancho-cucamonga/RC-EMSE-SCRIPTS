@@ -1,8 +1,8 @@
 function bldUpdateGisObjects() {
 
 	var rcBLDInspectArea = getGISInfo('CITYOFRC', 'Building Inspection Areas', 'INSPECTOR');
-	var rcMapBoundaries = getGISInfo('CITYOFRC', 'Map Boundaries', 'MAP');
-	var rcVHFSZ = getGISInfoArray('CITYOFRC', 'VHFSZ', 'HAZ_CLASS');
+	var rcMapBoundaries = getGISInfo('CITYOFRC', 'Parcel And Tract Map Boundaries', 'MAP');
+	var rcVHFSZ = getGISInfoArray('CITYOFRC', 'Very High Fire Severity Zone', 'HAZ_CLASS');
 	var JUPFZoning = getGISInfo('CITYOFRC', 'Joint Use Public Facility Zones', 'NAME');
 	if (!rcVHFSZ || rcVHFSZ.toString() == '') {
 		editAppSpecific('GIS INFORMATION.VHFHSZ', 'No');
