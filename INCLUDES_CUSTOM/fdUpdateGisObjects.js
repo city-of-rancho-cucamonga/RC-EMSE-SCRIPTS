@@ -2,8 +2,9 @@ function fdUpdateGisObjects() {
 
 	var rcFireInspArea = getGISInfoArray('CITYOFRC', 'Fire Inspection Areas', 'Zone');
 	var rcVHFHSZ = getGISInfoArray('CITYOFRC', 'VHFSZ', 'HAZ_CLASS');
-	var rcFirstDueBoundary = getGISInfoArray('CITYOFRC', 'First Due Boundary', 'FIRSTDUE_');
-	var rcIsVacant = getGISInfo2('CITYOFRC', 'Parcels', 'VACANT', -5, 'Feet');
+	var rcFirstDueBoundary = getGISInfoArray('CITYOFRC', 'Fire First Due', 'FIRSTDUE_');
+	// var rcIsVacant = getGISInfo2('CITYOFRC', 'Parcels', 'VACANT', -5, 'Feet');
+	var rcIsVacant = getGISInfo('CITYOFRC', 'Parcels', 'Type_');
 	if (rcFireInspArea.length == 0) {
 		editAppSpecific('GIS INFO.Inspection Area', 'N/A');
 	} else {
@@ -22,7 +23,7 @@ function fdUpdateGisObjects() {
 		editAppSpecific('GIS INFO.Fire Station', rcFirstDueBoundary.toString());
 	}
 
-	if (rcIsVacant == 'YES') {
+	if (rcIsVacant == 'VACANT') {
 		editAppSpecific('GIS INFO.Weed Abatement Area', rcIsVacant.toString());
 	} else {
 		editAppSpecific('GIS INFO.Weed Abatement Area', 'NO');
