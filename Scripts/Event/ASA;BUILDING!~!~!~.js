@@ -38,7 +38,7 @@ var appT4 = appCapTypeArr[3];
 if (!(appT1=='Building' & appT2=='FCS' & appT3=='Miscellaneous' & appT4=='High Pile Storage') & !(appT1=='Building' & appT2=='FCS' & appT3=='Suppression System' & appT4=='Fixed')){
 	bldUpdateGisObjects();
 }
-if ((appT1=='Building' & appT2=='FCS' & appT3=='Miscellaneous' & appT4=='High Pile Storage') | (appT1=='Building' & appT2=='FCS' & appT3=='Suppression System' & appT4=='Fixed')){
+else{
 	fdBldUpdateGisObjects()
 }
 	
