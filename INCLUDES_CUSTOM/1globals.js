@@ -6,7 +6,7 @@ useAppSpecificGroupName = true;
 // in custom area since we can't edit the new INCLUDES_ACCELA_GLOBALS
 loadAppSpecific(AInfo); 
 eval(getScriptText("INCLUDES_CSLB"));
-if (matches(currentUserID,'SID.SIPHOMSAY','KYLE.WINGSON','MICHELLE.FERNANDES','LIZA.TUNURI')) {
+if (matches(currentUserID,'SID.SIPHOMSAY','JENNIFER.QUAN','KYLE.WINGSON','MICHELLE.FERNANDES','LIZA.TUNURI')) {
 	showDebug = true;
 	}
 
