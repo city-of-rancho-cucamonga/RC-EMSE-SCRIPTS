@@ -34,6 +34,41 @@ function fcsFeeAlarm() {
 					newFCSAlarmTotal += (Math.ceil((parseInt(FIREALARMDETAIL[xxx]['Quantity']) - 500) / 25) * 157.00) + 1903.00;
 		}
 
+
+// ADD NEW FEE
+if (typeof(FIREALARMDETAIL) == 'object') {
+			for (xxx in FIREALARMDETAIL)
+				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Fire Alarm & Sprinkler Monitoring Production' && FIREALARMDETAIL[xxx]['Quantity'] > 0 && FIREALARMDETAIL[xxx]['Quantity'] <= 15)
+					newFCSAlarmTotal += 357.46;
+		}
+
+		if (typeof(FIREALARMDETAIL) == 'object') {
+			for (xxx in FIREALARMDETAIL)
+				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Fire Alarm & Sprinkler Monitoring Production' && FIREALARMDETAIL[xxx]['Quantity'] > 15 && FIREALARMDETAIL[xxx]['Quantity'] <= 50)
+					newFCSAlarmTotal += 486.51;
+		}
+
+		if (typeof(FIREALARMDETAIL) == 'object') {
+			for (xxx in FIREALARMDETAIL)
+				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Fire Alarm & Sprinkler Monitoring Production' && FIREALARMDETAIL[xxx]['Quantity'] > 50 && FIREALARMDETAIL[xxx]['Quantity'] <= 100)
+					newFCSAlarmTotal += 617.54;
+		}
+
+		if (typeof(FIREALARMDETAIL) == 'object') {
+			for (xxx in FIREALARMDETAIL)
+				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Fire Alarm & Sprinkler Monitoring Production' && FIREALARMDETAIL[xxx]['Quantity'] > 100 && FIREALARMDETAIL[xxx]['Quantity'] <= 500)
+					newFCSAlarmTotal += 941.86;
+		}
+
+		if (typeof(FIREALARMDETAIL) == 'object') {
+			for (xxx in FIREALARMDETAIL)
+				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Fire Alarm & Sprinkler Monitoring Production' && FIREALARMDETAIL[xxx]['Quantity'] > 500)
+					newFCSAlarmTotal += (Math.ceil((parseInt(FIREALARMDETAIL[xxx]['Quantity']) - 500) / 25) * 75.97) + 941.86;
+		}
+
+
+
+
 		if (typeof(FIREALARMDETAIL) == 'object') {
 			for (xxx in FIREALARMDETAIL)
 				if (FIREALARMDETAIL[xxx]['Type of Use'] == 'Refrigerant Monitoring System')
