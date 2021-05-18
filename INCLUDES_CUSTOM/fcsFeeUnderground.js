@@ -79,8 +79,8 @@ function fcsFeeUnderground() {
 	}
 	//end replaced branch: FCS_UndergroundFee:Lookup;
 	if (newFCSUnderTotal > 0) {
-		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSUnderTotal*1.026*1.029, 'N');
-		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSUnderTotal*1.026*1.029, 'N');
+		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSUnderTotal*1.026*1.029*1.023, 'N');
+		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSUnderTotal*1.026*1.029*1.023, 'N');
 	}
 
 }
