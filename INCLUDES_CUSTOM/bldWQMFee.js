@@ -19,7 +19,7 @@ function bldWQMFee() {
 	}
 	//end replaced branch: BuildingWQMFee:Lookup;
 	if (newWQMTotal > 0) {
-		updateFee('WQM020', 'BLD_WQMP', 'FINAL', newWQMTotal * 1.019 * 1.020 * 1.025 * 1.024 * 1.025, 'N');
+		updateFee('WQM020', 'BLD_WQMP', 'FINAL', newWQMTotal * 1.019 * 1.020 * 1.025 * 1.024 * 1.025 * 1.023, 'N');
 	}
 
 }
