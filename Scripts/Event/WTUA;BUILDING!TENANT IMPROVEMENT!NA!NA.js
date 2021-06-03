@@ -74,3 +74,9 @@ if (isTaskActive('FCS Review')) {
 // if (wfTask == 'Building Review' && wfStatus == 'Approved' && AInfo['Operational Permit Required'] == 'Yes') {
 // 	email('sid.siphomsay@cityofrc.us, ssiphomsay@yahoo.com','noreply@cityofrc.us','Building Review Approved: Operational Permit Required!','This is a text area.');
 // 	}
+
+
+//  WTUA:Building/Tenant Improvement/NA/NA (for SELF-HAUL)
+if (wfTask == 'Application Submittal' && wfStatus == 'Submitted' && AInfo['Waste Disposal'] == 'SELF-HAUL') {
+ 	email('sid.siphomsay@cityofrc.us, kyle.wingson@cityofrc.us, jennifer.quan@cityofrc.us','noreply@cityofrc.us','Self-Haul Application Submitted','This is a text area for self-haul permit.');
+ 	}
