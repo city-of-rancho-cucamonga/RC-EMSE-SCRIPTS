@@ -7,7 +7,7 @@ function fcsFeeMisc() {
 
 		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
 			for (xxx in FIREMISCELLANEOUSDETAIL)
-				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service')
+				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service' && parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']) < 6)
 					newFCSMiscTotal += (Math.ceil(parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']))) * 656.00;
 			comment('What is ' + FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] + ' ' + newFCSMiscTotal);
 		}
@@ -15,6 +15,7 @@ function fcsFeeMisc() {
 		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
 			for (xxx in FIREMISCELLANEOUSDETAIL)
 				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service' && parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']) > 5)
+					newFCSMiscTotal +=  5 * 656.00;
 					newFCSMiscTotal += (Math.ceil(parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity'])) - 5) * 262.00;
 			comment('What is ' + FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] + ' ' + newFCSMiscTotal);
 		}
