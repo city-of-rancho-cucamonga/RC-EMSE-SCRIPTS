@@ -4,6 +4,14 @@ function fcsFeeMisc() {
 
 	//start replaced branch: FCS_MiscFee:Lookup
 	{
+
+		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
+			for (xxx in FIREMISCELLANEOUSDETAIL)
+				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service')
+					newFCSMiscTotal += (Math.ceil(parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']))) * 656.00;
+			comment('What is ' + FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] + ' ' + newFCSMiscTotal);
+		}
+
 		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
 			for (xxx in FIREMISCELLANEOUSDETAIL)
 				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service' && parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']) > 5)
