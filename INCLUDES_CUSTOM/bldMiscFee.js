@@ -183,7 +183,7 @@ function bldMiscFee() {
 
 		if (typeof(TYPESOFWORK) == 'object') {
 			for (xxx in TYPESOFWORK)
-				if (TYPESOFWORK[xxx]['Type'] == 'Block Walls 3-6 ft high' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 100)
+				if (TYPESOFWORK[xxx]['Type'] == 'Block walls 3-6 ft high' && (TYPESOFWORK[xxx]['Square Footage'] * 1) > 100)
 					newMiscTotal += Math.ceil(((TYPESOFWORK[xxx]['Square Footage'] * 1) - 100) / 50) * 92;
 		}
 
