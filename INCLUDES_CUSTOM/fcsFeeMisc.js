@@ -6,8 +6,15 @@ function fcsFeeMisc() {
 	{
 		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
 			for (xxx in FIREMISCELLANEOUSDETAIL)
+				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service' && parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']) < 6)
+					newFCSMiscTotal += 656.00;
+			comment('What is ' + FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] + ' ' + newFCSMiscTotal);
+		}
+
+		if (typeof(FIREMISCELLANEOUSDETAIL) == 'object') {
+			for (xxx in FIREMISCELLANEOUSDETAIL)
 				if (FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] == 'Public Underground Fire Service' && parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity']) > 5)
-					newFCSMiscTotal += (Math.ceil(parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity'])) - 5) * 262.00;
+					newFCSMiscTotal += (656.00 + ((Math.ceil(parseFloat(FIREMISCELLANEOUSDETAIL[xxx]['Quantity'])) - 5) * 262.00));
 			comment('What is ' + FIREMISCELLANEOUSDETAIL[xxx]['Type of Use'] + ' ' + newFCSMiscTotal);
 		}
 
