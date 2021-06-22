@@ -10,10 +10,12 @@ function bldUpdateGisObjects() {
 		editAppSpecific('GIS INFORMATION.VHFHSZ', 'Yes');
 	}
 
-	if (!rcBLDInspectArea) {
-		editAppSpecific('GIS INFORMATION.Inspection Area', 'N/A');
-	} else {
-		editAppSpecific('GIS INFORMATION.Inspection Area', rcBLDInspectArea);
+	if (AInfo['GIS INFORMATION.Inspection Area'] == null){
+		if (!rcBLDInspectArea ) {
+			editAppSpecific('GIS INFORMATION.Inspection Area', 'N/A');
+		} else {
+			editAppSpecific('GIS INFORMATION.Inspection Area', rcBLDInspectArea);
+		}
 	}
 
 	if (!rcMapBoundaries) {
