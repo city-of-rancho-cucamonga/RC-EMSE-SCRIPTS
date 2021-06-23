@@ -10,7 +10,7 @@ function bldUpdateGisObjects() {
 		editAppSpecific('GIS INFORMATION.VHFHSZ', 'Yes');
 	}
 
-	if (AInfo['GIS INFORMATION.Inspection Area'] == null){
+	if (AInfo['GIS INFORMATION.Inspection Area'] === null){
 		if (!rcBLDInspectArea ) {
 			editAppSpecific('GIS INFORMATION.Inspection Area', 'N/A');
 		} else {
