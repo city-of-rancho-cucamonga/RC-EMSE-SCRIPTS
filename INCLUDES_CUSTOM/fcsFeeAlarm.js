@@ -145,8 +145,8 @@ if (typeof(FIREALARMDETAIL) == 'object') {
 	// 	}
 
 	if (newFCSAlarmTotal > 0) {
-		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal*1.026*1.029, 'N');
-		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal*1.026*1.029, 'N');
+		updateFee('FCS011', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal*1.026*1.029*1.023, 'N');
+		updateFee('FCS021', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal*1.026*1.029*1.023, 'N');
 		updateFee('FCS050', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal, 'N');
 		updateFee('FCS055', 'FCS_STANDARD', 'FINAL', newFCSAlarmTotal, 'N');
 	}
