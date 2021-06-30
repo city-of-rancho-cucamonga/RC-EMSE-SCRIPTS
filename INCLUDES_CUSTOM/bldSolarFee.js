@@ -120,8 +120,8 @@ function bldSolarFee() {
 	// 	}
 
 	if (newRSolarTotal > 0) {
-		updateFee('PV011', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026*1.029, 'N');
-		updateFee('PV021', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026*1.029, 'N');
+		updateFee('PV011', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026*1.029*1.023, 'N');
+		updateFee('PV021', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal*1.026*1.029*1.023, 'N');
 		updateFee('PV060', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
 		updateFee('PV070', 'BLD_R_SOLAR', 'FINAL', newRSolarTotal, 'N');
 	}
